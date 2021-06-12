@@ -1,0 +1,21 @@
+extends ../layouts/header
+
+block content
+  h1= title
+  p Welcome to #{title}
+  form(
+    action="login"
+    class="jsSendForm"
+    method="post"
+  )
+    input(
+      type="email"
+      name="email"
+      placeholder="Correo"
+    )
+    input(
+      type="password"
+      name="password"
+      placeholder="Contrasena"
+    )
+    button Enviar

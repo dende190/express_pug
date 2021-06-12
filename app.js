@@ -4,8 +4,7 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const {config} = require('./config/config');
-const indexRoute = require('./routes/indexRoute');
-const usersRoute = require('./routes/usersRoute');
+const usersRoute = require('./routes/users');
 const redirect404 = require('./utils/middleware/redirect404Handlers');
 const errorHandlers = require('./utils/middleware/errorHandlers');
 
@@ -21,7 +20,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Middlewares
 //Routes
-indexRoute(app);
 usersRoute(app);
 
 // catch 404 and forward to error handler

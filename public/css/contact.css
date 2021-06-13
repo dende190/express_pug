@@ -1,0 +1,22 @@
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.body img {
+  width: 90%;
+  height: 90%;
+}
+
+.container_padre {
+  display: grid;
+  grid-template-rows: 9.5% 85% 10%;
+  height: 600px;
+  width: 100%;
+  grid-template-areas:
+    "header"
+    "body"
+    "footer";
+}

@@ -20,11 +20,8 @@ loginService = {
       return false;
     }
 
-    return true;
+    return user.id;
   },
-  logout: function() {
-    console.log('user log out');
-  }
 };
 
 module.exports = loginService;

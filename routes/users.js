@@ -6,20 +6,41 @@ function usersRoute(app) {
   app.use('/', router);
 
   router.get('/', (req, res, next) => {
-    res.render('users/login', { title: 'Login' });
+    if (!req.session.userId) {
+      return res.redirect('/iniciar-sesion');
+    }
+    res.render('test', { title: 'Login' });
   });
 
-  router.post('/login', async (req, res, next) => {
-    const userLogged = await loginService.authUser(req.body);
-    if (!userLogged) {
-      res.redirect('/');
+  router.get('/iniciar-sesion', (req, res, next) => {
+    if (req.session.userId) {
+      return res.redirect('/');
     }
 
-    res.redirect('/start');
+    const datosVista = {
+      title: 'Iniciar Sesion',
+    }
+    res.render('users/login', datosVista);
   });
 
-  router.get('/start', (req, res, next) => {
-    res.render('test', { title: 'Login' });
+  router.post('/iniciar-sesion', async (req, res, next) => {
+    const userId = await loginService.authUser(req.body);
+    if (!userId) {
+      return res.redirect('/iniciar-sesion');
+    }
+
+    req.session.userId = userId;
+    res.redirect('/');
+  });
+
+  router.get('/cerrar-sesion', (req, res, next) => {
+    req.session.destroy((err) => {
+      if (err) {
+        return console.log(err);
+      }
+
+      res.redirect('/iniciar-sesion');
+    });
   });
 }
 

@@ -7,6 +7,8 @@ const logger = require('morgan');
 const {config} = require('./config/config');
 const usersRoute = require('./routes/users');
 const companyRoute = require('./routes/company');
+const coursesRoute = require('./routes/courses');
+const gadeAcademyRoute = require('./routes/gadeAcademy');
 const redirect404 = require('./utils/middleware/redirect404Handlers');
 const errorHandlers = require('./utils/middleware/errorHandlers');
 
@@ -32,7 +34,9 @@ app.use(expressSession({
 }));
 
 //Routes
+gadeAcademyRoute(app);
 usersRoute(app);
+coursesRoute(app);
 companyRoute(app);
 
 // catch 404 and forward to error handler

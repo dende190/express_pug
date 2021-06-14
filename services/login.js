@@ -9,7 +9,7 @@ loginService = {
       [email]
     ).then(
       userResult => userResult
-    );
+    ).catch(err => console.log(err));
 
     if (!user) {
       return false;

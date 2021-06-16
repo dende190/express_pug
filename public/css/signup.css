@@ -1,3 +1,6 @@
+button{
+  margin: 0;
+}
 .terminosCondiciones {
   margin: 0;
   font: normal normal normal 11px/23px Open Sans;
@@ -16,6 +19,7 @@
   display: flex;
   justify-content: center;
   margin-top: 10px;
+  height: auto;
 }
 
 .pos_button {
@@ -46,7 +50,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 600px;
+  /*recuerda modificar este valo para el responsive*/
+  height: 100vh;
 }
 
 .container_padre {
@@ -55,8 +60,8 @@
   background-image: url(../img/Inscripcion_Fondo.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  width: 70%;
-  height: 100%;
+  width: 900px;
+  height: 700px;
   justify-content: center;
   align-items: center;
 }
@@ -73,7 +78,7 @@
 
 .container {
   height: 90%;
-  width: 80%;
+  width: 65%;
 }
 
 .info_full_name {

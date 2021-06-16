@@ -1,27 +1,3 @@
-body {
-  background-color: #F5F5F5;
-  margin: 0px;
-}
-
-h4 {
-  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-600) var(--unnamed-font-size-30)/var(--unnamed-line-spacing-41) var(--unnamed-font-family-open-sans);
-  font: normal normal bold 38px Open Sans;
-  font: normal normal 600 20px/31px Open Sans;
-  font: normal normal bold 20px/31px Open Sans;
-  font-weight: 100;
-  font-family: Arial, Helvetica, sans-serif;
-  letter-spacing: 0px;
-  letter-spacing: var(--unnamed-character-spacing-0);
-  color: #28215C;
-  color: #000000;
-  opacity: 1;
-  margin:0px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  text-align: center;
-  text-transform: capitalize;
-  margin: 10px;
-}
 
 h2 {
   font: normal normal bold 35px/46px Open Sans;
@@ -33,98 +9,27 @@ h2 {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-
-p {
-  font: normal normal normal 16px/23px Open Sans;
-  font: normal normal normal 14px/23px Open Sans;
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  text-align: left;
-  letter-spacing: 0px;
-  color: black;
-  color: #1C1740;
-  opacity: 1;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
 a {
   text-decoration: none;
-}
-
-input {
-  border-radius: 7px;
-  border: white;
-  background-color: white;
-  padding-top: 5px;
-  height: 30%;
 }
 
 button {
   background: transparent linear-gradient(275deg, #FFB70C 0%, #FF9424 100%) 0% 0% no-repeat padding-box;
   box-shadow: 3px 3px 10px #00000029;
   border-radius: 100px;
-  width: 350px;
-  height: 40px;
-  width: 60%;
-  height: 40px;
-  padding-left: 100px;
-  padding-bottom: 20px;
-  margin-top: 30px;
-  margin-top: 10px;
-  margin-bottom: 30px;
-  margin-bottom: 10px;
-  border: #FFB70C;
   width: 250px;
-  padding-left: 27%;
-  width: 60%;
   height: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: #FFB70C;
+  color: white;
+  font-size: 15px;
 }
 
 button:hover {
   background: transparent linear-gradient(275deg, #FF9424 0%, #FFB70C 100%) 0% 0% no-repeat padding-box;
   transform: scale(1.05);
   transform: scale(1.02);
-}
-
-button p {
-  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-600) var(--unnamed-font-size-25)/var(--unnamed-line-spacing-34) var(--unnamed-font-family-open-sans);
-  letter-spacing: var(--unnamed-character-spacing-0);
-  color: var(--blanco);
-  text-align: left;
-  text-align: center;
-  font: normal normal 600 15px/24px Open Sans;
-  font: normal normal normal 16px/23px Open Sans;
-  margin: 0;
-  margin-top: 5px;
-  letter-spacing: 0px;
-  color: #ffffff;
-  text-transform: capitalize;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 600;
-  width: 120px;
-}
-
-span{
-  font: normal normal normal 16px/23px Open Sans;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: left;
-  letter-spacing: 0px;
-  color: black;
-  opacity: 1;
-  margin-bottom: 5px;
-}
-
-form {
-  background: url(../img/Log_infondo.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  display: flex;
-  flex-direction: column;
-  width: 600px;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
 }
 
 ul li {
@@ -139,6 +44,7 @@ ul li {
   padding: 0 100px;
   align-items: center;
   justify-content: space-between;
+  height: 55px;
 }
 
 .header ul {
@@ -151,7 +57,17 @@ ul li {
 
 .header ul li {
   text-decoration: none;
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 45px;
+  padding: 5px;
+  text-align: left;
+  font: normal normal normal 18px/26px Open Sans;
+  letter-spacing: 0px;
+  color: #28215C;
+  text-transform: capitalize;
+  opacity: 1;
 }
 
 .header ul li:hover {
@@ -172,26 +88,17 @@ ul li {
   box-shadow: 3px 3px 10px #00000029;
   opacity: 1;
 }
-
-.container4 {
-  display: grid;
-  width: 30%;
-  grid-template-columns: 50% 50%;
-  justify-content: space-around;
-}
-
-.container4 img {
-  height: 30px;
-  width: 30px;
-}
-
-.element_p3 {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  justify-items: center;
+.footer{
+  display: flex;
   align-items: center;
+  justify-content: flex-end;
+  height: 55px;
+  padding-right: ;
 }
 
-.d-none {
-  display: none;
+.footer img{
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  padding-right: 50px;
 }

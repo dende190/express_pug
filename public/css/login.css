@@ -1,3 +1,7 @@
+.head_tittle h4{
+  color: #28215C;
+  font: normal normal 600 40px/52px Open Sans;
+}
 .container_button {
   display: flex;
   flex-direction: column;
@@ -75,7 +79,7 @@ form {
   width: 60%;
 }
 
-.stylo_input input {
+.style_input input {
   width: 95%;
   margin: 5px;
   height: px;

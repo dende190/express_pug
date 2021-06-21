@@ -11,7 +11,7 @@
     "contents"
     "contents";
 }
-.element_p1 {
+.parent_container--element_p1 {
   background-image: url(../img/Landing_Head.png);
   background-color: #F5F5F5;
   background-repeat: no-repeat;
@@ -21,8 +21,7 @@
   height: 100%;
   align-items: center;
 }
-.container_element_p1{
-
+.parent_container--element_p1--cont{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,35 +31,35 @@
   padding: 20px;
   margin-left: 50px;
 }
-.container_element_p1 h2{
+.parent_container--element_p1--cont h2{
   width: 75%;
 }
-.container_element_p1_2{
+.parent_container--element_p1_2--cont{
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 50px;
 }
-.container_element_p1_2 .item{
+.parent_container--element_p1_2--cont .item{
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.container_element_p1_2 .item img{
+.parent_container--element_p1_2--cont .item img{
   height: 600px;
   margin-left: 80px;
 }
-.container_element_p1_2 .steam{
+.parent_container--element_p1_2--cont .steam{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.container_element_p1_2 .steam img{
+.parent_container--element_p1_2--cont .steam img{
   width: 80%;
   margin-bottom: 50px;
 }
-.element_p2 {
+.parent_container--element_p2 {
   background-image: url(../img/poder_de_crear.png);
   background-size: 101% 100%;
   display: flex;
@@ -68,13 +67,13 @@
   justify-content: flex-start;
 }
 
-.element_p2 .text_p2 {
+.parent_container--element_p2 .text_p2 {
   width: 400px;
   display: flex;
   flex-direction: column;
   margin-left: 150px;
 }
-.element_p3 {
+.parent_container--element_p3 {
   background-color: #F5F5F5;
   display: flex;
   flex-direction: column;
@@ -82,13 +81,13 @@
   align-items: center;
   justify-content: center;
 }
-.item_title{
+.iparent_container--element_p3--item_title{
   display: flex;
   align-items: center;
   justify-content: center;
   width: 500px;
 }
-.container_element_p3{
+.parent_container--element_p3--cont{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -112,12 +111,12 @@
   margin: 30px;
   border-radius: 30px;
 }
-.elemente_p4_img img{
+.parent_container--element_p4 img{
   width: 100%;
   height: 100%;
   margin: 10px;
 }
-.element_p5{
+.parent_container--element_p5{
   background-image: url(../img/Imagen4.jpeg);
   background-size: 100% 100%;
   background-color: #F5F5F5;

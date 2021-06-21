@@ -3,17 +3,17 @@ block styles
   link(rel="stylesheet" href="/css/gadeAcademy.css")
 block content
   div.parent_container
-    div.element_p1.contents
-      div.container_element_p1
+    div.parent_container--element_p1.contents
+      div.parent_container--element_p1--cont
         h2 Programacion, arte y tecnología para niños
         p
-          | El futuro está en manos de quienes hoy comprenden la <br>
+          | El futuro está ens manos de quienes hoy comprenden la <br>
           | tecnología y la usan para hacer un mundo más accesible,<br>
           | útil y dinámico. Nosotros te hacemos parte de ello <br>
           | fortaleciendo tus conocimientos de una forma lúdica, <br>
           | sencilla y muy divertidas.
         button Mi primera clase gratis
-      div.container_element_p1_2
+      div.parent_container--element_p1_2--cont
         div.item
           img(src="/img/child_imagin.png", alt="")
         div.steam
@@ -25,7 +25,7 @@ block content
             |consectetur adipisicing elit. Esse velit delectus porro ut maxime adipisci, inventore<br>
             |saepe totam, veniam quam minus obcaecati vitae rem incidunt suscipit? Similique <br>
             |libero voluptatum quis?        
-    div.element_p2.contents
+    div.parent_container--element_p2.contents
       div.text_p2
         p
           | Ofrecemos cursos para iniciar a los mas jovenes y niños a entender
@@ -34,10 +34,10 @@ block content
           | minecraft, las bases de la programacion y la creatividad de cada
           | estudiante.
         button Mi primera clase gratis
-    div.element_p3.contents
-        div.item_title
+    div.parent_container--element_p3.contents
+        div.parent_container--element_p3--item_title
           h2 Explora nuestros cursos
-        div.container_element_p3
+        div.parent_container--element_p3--cont
             div.cont_course
               a(href="/cursos/castillo")
                 img(class="img_curso" src="/img/castillo.jpg")
@@ -62,10 +62,9 @@ block content
                 | En este curso crearemos un parque de diversiones,
                 | en el cual vamos a aprender sobre la tegnologia detras de las
                 | atracciones, esto mientras programamos nuestro mundo.
-    div.element_p4.contents
-      div.elemente_p4_img
-        img(src="/img/ruta_aprendizaje.png", alt="")
-    div.element_p5.contents
+    div.parent_container--element_p4.contents
+      img(src="/img/ruta_aprendizaje.png", alt="")
+    div.parent_container--element_p5.contents
       div.text_p5
         h2 nuestros esrudiantes
       div.container_element_p5

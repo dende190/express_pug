@@ -94,8 +94,8 @@ ul li {
   width: 50%;
 }
 
-.header--logo-container {
-  align-items: center;
+.header--logo-container img{
+  height: 2.5rem;
 }
 
 .footer {

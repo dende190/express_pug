@@ -1,7 +1,7 @@
 
 .parent_container {
   display: grid;
-  height: 3600px;
+  height: 360rem;
   grid-template-rows: 33% 12% 20% 24% 11%;
   row-gap: 0px;
   grid-template-areas:
@@ -28,17 +28,21 @@
   justify-content: flex-start;
   width: 40%;
   height: 70%;
-  padding: 20px;
-  margin-left: 50px;
+  padding: 2rem;
+  margin-left: 5rem;
 }
 .parent_container--element_p1--cont h2{
-  width: 75%;
+  width: 90%;
+}
+.parent_container--element_p1--cont p{
+  width: 90%;
+  color: #1C1740;
 }
 .parent_container--element_p1_2--cont{
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 50px;
+  padding: 5rem;
 }
 .parent_container--element_p1_2--cont .item{
   display: flex;
@@ -46,8 +50,8 @@
   align-items: center;
 }
 .parent_container--element_p1_2--cont .item img{
-  height: 600px;
-  margin-left: 80px;
+  height: 60rem;
+  margin-left: 8rem;
 }
 .parent_container--element_p1_2--cont .steam{
   display: flex;
@@ -57,21 +61,22 @@
 }
 .parent_container--element_p1_2--cont .steam img{
   width: 80%;
-  margin-bottom: 50px;
+  margin-bottom: 5rem;
 }
 .parent_container--element_p2 {
   background-image: url(../img/poder_de_crear.png);
-  background-size: 101% 100%;
+  background-size: 100% 100%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
 
 .parent_container--element_p2 .text_p2 {
-  width: 400px;
+  width: 40rem;
   display: flex;
   flex-direction: column;
-  margin-left: 150px;
+  align-items: center;
+  margin-left: 15rem;
 }
 .parent_container--element_p3 {
   background-color: #F5F5F5;
@@ -85,7 +90,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 500px;
+  width: 50rem;
 }
 .parent_container--element_p3--cont{
   display: flex;
@@ -99,22 +104,22 @@
   justify-content: center;
 }
 .cont_course img{
-  width: 300px;
-  height: 200px;
+  width: 30rem;
+  height: 20rem;
 }
 .cont_course p{
-  width: 250px;
+  width: 30rem;
 }
 .img_curso {
-  height: 180px;
-  width: 250px;
-  margin: 30px;
-  border-radius: 30px;
+  height: 18rem;
+  width: 25rem;
+  margin: 3rem;
+  border-radius: 3rem;
 }
 .parent_container--element_p4 img{
   width: 100%;
   height: 100%;
-  margin: 10px;
+  margin: 1rem;
 }
 .parent_container--element_p5{
   background-image: url(../img/Imagen4.jpeg);
@@ -133,22 +138,23 @@
   margin-right: 12%;
 }
 .parent_container--element_p5--cont h2{
-  width: 500px;
+  width: 50rem;
 }
 .parent_container--element_p5--cont{
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  width: 400px;
-  margin-right: 150px;
+  width: 40rem;
+  margin-right: 15rem;
 }
 .parent_container--element_p5--cont ul li{
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
   text-justify:distribute;
+  color: #1C1740;
 }
 .parent_container--element_p5--cont ul li img{
-  width: 50px;
-  height: 50px;
+  width: 5rem;
+  height: 5rem;
 }
 .text_li{
   display: flex;

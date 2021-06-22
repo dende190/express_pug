@@ -3,32 +3,31 @@ block styles
   link(rel="stylesheet", href="/css/login.css")
 
 block content
-  div.inicio_sesion
+  div.login
     form(
       action="iniciar-sesion"
       method="post"
     )
-      div.head_tittle
-        h4 Bienvenido de nuevo
-      div.imputs_login
-        div.info_user.style_input
+      h2 Bienvenido de nuevo
+      div.login--container-inputs
+        div.login--container--inputs-info.style_input
           label(for="email") Correo
           input(
             type="email"
             name="email"
             placeholder="Correo"
           )
-        div.info_password.style_input
+        div.login--container--inputs-info.style_input
           label(for="password") Contraseña
           input(
             type="password"
             name="password"
             placeholder="Contraseña"
           )
-      div.container_button
+      div.login--container--container_button
         button Iniciar sesion
-        a ¿olvidaste tu contraseña?
-      div.container_button
+        a.lostPassword ¿olvidaste tu contraseña?
+      div.login--container--container_button
         button
           a.button_open_registro Registrate
         p ¿Aun no tienes una cuenta?

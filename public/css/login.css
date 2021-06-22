@@ -1,51 +1,4 @@
-.head_tittle h4{
-  color: #28215C;
-  font: normal normal 600 40px/52px Open Sans;
-}
-.container_button {
-  display: flex;
-  flex-direction: column;
-  width: 60%;
-  justify-content: center;
-  align-items: center;
-}
-
-.container_button a {
-  text-decoration: none;
-  color: black;
-}
-
-.button_open_registro {
-  width: 60%;
-}
-
-.container_button a input {
-  font: normal normal normal 16px/23px Open Sans;
-  font-family: Arial, Helvetica, sans-serif;
-  background: transparent linear-gradient(275deg, #FFB70C 0%, #FF9424 100%) 0% 0% no-repeat padding-box;
-  font-weight: 600;
-  opacity: 1;
-  border-radius: 100px;
-  border: #FFB70C;
-  width: 100%;
-  height: 40px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  color: white;
-}
-
-.container_button a input:hover {
-  background: transparent linear-gradient(275deg, #FF9424 0%, #FFB70C 100%) 0% 0% no-repeat padding-box;
-  transform: scale(1.05);
-}
-
-.pos_button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.inicio_sesion {
+.login {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,42 +10,76 @@ form {
   background-size: 100% 100%;
   display: flex;
   flex-direction: column;
-  width: 600px;
-  height: 70%;
+  width: 60rem;
+  height: 60rem;
   align-items: center;
   justify-content: center;
 }
-.imputs_login {
+.login--container-inputs{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
-
-.info_user {
+.login--container--inputs-info{
   width: 60%;
 }
-
-.info_password {
-  width: 60%;
+label{
+  font-size: 1.6rem;
+  margin: 0.5rem;
 }
-
 .style_input input {
   width: 95%;
-  margin: 5px;
+  margin: 0.5rem;
   height: px;
-  border-radius: 7px;
-  padding: 5px;
+  border-radius: 0.7rem;
+  padding: 0.5rem;
   border: grey;
-  margin-bottom: 15px;
+  margin-bottom: 1.5rem;
+}
+.login--container--container_button {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 20%;
+  justify-content: center;
+  align-items: center;
 }
 
-.lostPassword a {
-  font: normal normal normal 16px/23px Open Sans;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  color: black;
+.login--container--container_button a {
   text-decoration: none;
+  color: black;
+}
+
+.button_open_registro {
+  width: 60%;
+}
+
+.login--container--container_button a input {
+  font-size: 1.6rem;
+  background: transparent linear-gradient(275deg, #FFB70C 0%, #FF9424 100%) 0% 0% no-repeat padding-box;
+  opacity: 1;
+  border-radius: 10rem;
+  border: #FFB70C;
+  width: 100%;
+  height: 4rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  color: white;
+}
+
+.login--container--container_button a input:hover {
+  background: transparent linear-gradient(275deg, #FF9424 0%, #FFB70C 100%) 0% 0% no-repeat padding-box;
+  transform: scale(1.05);
+}
+
+.pos_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lostPassword{
+  font-size: 1.8rem;
 }

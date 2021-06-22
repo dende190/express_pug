@@ -1,29 +1,45 @@
 
+*{
+  box-sizing:  border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 62.5%;
+  font-family: 'DM Sans';
+}
 h2 {
-  font: normal normal bold 35px/46px Open Sans;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 3.5rem;
   letter-spacing: 0px;
   color: #28215C;
   opacity: 1;
-  margin:0px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+h4{
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 1rem;
 }
 a {
   text-decoration: none;
 }
-
+p{
+  font-size: 1.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
 button {
   background: transparent linear-gradient(275deg, #FFB70C 0%, #FF9424 100%) 0% 0% no-repeat padding-box;
   box-shadow: 3px 3px 10px #00000029;
-  border-radius: 100px;
-  width: 250px;
-  height: 40px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  border-radius: 10rem;
+  width: 25rem;
+  height: 4.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
   border: #FFB70C;
   color: white;
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 
 button:hover {
@@ -34,40 +50,39 @@ button:hover {
 
 ul li {
   list-style: none;
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .header {
   background: #77F5FE;
-  box-shadow: 3px 3px 10px #00000029;
+  box-shadow: 0.3rem 0.3rem 1rem #00000029;
   opacity: 1;
   display: flex;
-  padding: 0 100px;
+  padding: 0 10rem;
   align-items: center;
   justify-content: space-between;
-  height: 55px;
+  height: 5.5rem;
 }
 
 .header ul {
   display: flex;
   list-style: none;
-  margin: 0px;
+  margin: 0;
   padding: 0;
   justify-content: space-between;
 }
 
 .header ul li {
+  
   text-decoration: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 45px;
-  padding: 5px;
+  height: 5.5rem;
+  padding: 0.5rem;
   text-align: left;
-  font: normal normal normal 18px/26px Open Sans;
-  letter-spacing: 0px;
   color: #28215C;
-  text-transform: capitalize;
-  opacity: 1;
 }
 
 .header ul li:hover {
@@ -75,30 +90,28 @@ ul li {
   transform: scale(1.05);
 }
 
-.header .item {
+.header--list-container{
   width: 50%;
 }
 
-.logo {
+.header--logo-container {
   align-items: center;
 }
 
 .footer {
   background: linear-gradient(to right, #77F5FE, #8ff3faad);
-  box-shadow: 3px 3px 10px #00000029;
+  box-shadow: 0.3rem 0.3rem 1rem #00000029;
   opacity: 1;
 }
 .footer{
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  height: 55px;
-  padding-right: ;
+  height: 5.5rem;
 }
 
 .footer img{
-  width: 30px;
-  height: 30px;
-  margin: 10px;
-  padding-right: 50px;
+  height: 3rem;
+  margin: 1rem;
+  padding-right: 5rem;
 }

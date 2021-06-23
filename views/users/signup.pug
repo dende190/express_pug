@@ -3,8 +3,8 @@ block styles
   link(rel="stylesheet", href="/css/signup.css")
 block content
   div.register_user
-    div.parentContainer
-      div.container_info_academy
+    div.register_user--parent_container
+      div.register_user--parent_container-info_academy
         h4 Crea proyectos impresionantes
         p
           | Descubre un mundo de posibilidades,
@@ -20,17 +20,17 @@ block content
           br
           | - Innovación
         p Haz parte de una comunidad Creativa
-      div.container_info_user
-        div.container
+      div.register_user--parent_container-info_user
+        div.info_user--data
           form(
             action="registrarse"
             class="jsSignUpForm"
             method="post"
           )
-            div.HeadTitle
+            div.info_user--data-head_title
               h4 Registrate
               p a un mundo de posibilidades.
-            .info_full_name.stylo_input
+            div.info_user--data-full_name.stylo_input
               input(
                 type="text"
                 name="firstname"
@@ -41,14 +41,14 @@ block content
                 name="lastname"
                 placeholder="Apellido"
               )
-            div.info_email.stylo_input
+            div.info_user--data-email.stylo_input
               input(
                 type="email"
                 name="email"
                 placeholder="Correo electronico"
                 data-type="email"
               )
-            div.confirmation_email.stylo_input
+            div.info_user--data-confirmation_email.stylo_input
               input(
                 type="email"
                 name="emailConfirm"
@@ -56,14 +56,14 @@ block content
                 data-type="email"
               )
             span.jsEmailError.d-none
-            div.registrer_password.stylo_input
+            div.info_user--data-registrer_password.stylo_input
               input(
                 type="password"
                 name="password"
                 placeholder="Contraseña"
                 data-type="password"
               )
-            div.confirmation_password.stylo_input
+            div.info_user--data-confirmation_password.stylo_input
               input(
                 type="password"
                 name="passwordConfirm"
@@ -71,9 +71,9 @@ block content
                 data-type="password"
               )
             span.jsPasswordError.d-none
-            div.info_birth
-              p fecha de nacimiento
-              div.day_birth
+            div.info_user--data-birth
+              p.text_font fecha de nacimiento
+              div.info_user--data-day_birth
                 select(name="day")
                   option Día
                   option(value="1") 1
@@ -239,9 +239,9 @@ block content
                   option(value="1907") 1907
                   option(value="1906") 1906
                   option(value="1905") 1905
-            div.info_sex
-              p Sexo
-              div.sexContainer
+            div.info_user--data-info_sex
+              p.text_font Sexo
+              div.info_user--data-sex_container
                 span
                   label Mujer
                     input(
@@ -257,12 +257,12 @@ block content
                       name="gender"
                       value="1"
                     )
-            p.termsConditions
+            p.terms_conditions
               | Al hacer clic en "Registrarte", aceptas nuestras Condiciones,
               | la Política de datos y la Política de cookies. Es posible que
               | te enviemos notificaciones por SMS, que puedes desactivar
               | cuando quieras.
-            div.cont_button
+            div.info_user--data-cont_button
               button Registrate
 block scripts
   script(src="/js/users/signup.js")

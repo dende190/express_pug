@@ -1,3 +1,6 @@
+.parent_container{
+  
+}
 .element {
   display: grid;
   background: #D0FCFF;
@@ -66,14 +69,15 @@
 .container_career--courses--text .item h4{
   margin: 0;
 }
-.container_career--courses--img{
+.img_courses{
   text-align: center;
 }
-.container_career--courses--img img{
+.img_courses img{
   width: 30rem;
   height: 20rem;
   margin: 1.5rem;
 }
-
-
-
+.img_courses--text{
+  width: 30rem;
+  margin: 1.5rem;
+}

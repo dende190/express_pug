@@ -64,6 +64,10 @@ function usersRoute(app) {
     req.session.userId = userId;
     res.redirect('/');
   });
+
+  router.get('/perfil-padres', (req, res, next) => {
+    res.render('users/parents_profile', { title: 'Login' });
+  });
 }
 
 module.exports = usersRoute;

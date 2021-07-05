@@ -68,6 +68,10 @@ function usersRoute(app) {
   router.get('/perfil-padres', (req, res, next) => {
     res.render('users/parents_profile', { title: 'Login' });
   });
+
+  router.get('/perfil-estudiantes', (req, res, next) => {
+    res.render('users/student_profile', { title: 'Login' });
+  });
 }
 
 module.exports = usersRoute;

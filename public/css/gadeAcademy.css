@@ -1,4 +1,3 @@
-
 .parent_container {
   display: grid;
   height: 360rem;
@@ -11,7 +10,8 @@
     "contents"
     "contents";
 }
-.parent_container--element_p1 {
+
+.parent_container--general_information {
   background-image: url(../img/Landing_Head.png);
   background-color: #F5F5F5;
   background-repeat: no-repeat;
@@ -21,7 +21,8 @@
   height: 100%;
   align-items: center;
 }
-.parent_container--element_p1--cont{
+
+.parent_container--general_information--cont {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,39 +32,47 @@
   padding: 2rem;
   margin-left: 5rem;
 }
-.parent_container--element_p1--cont h2{
+
+.parent_container--general_information--cont h2 {
   width: 90%;
 }
-.parent_container--element_p1--cont p{
+
+.parent_container--general_information--cont p {
   width: 90%;
   color: #1C1740;
 }
-.parent_container--element_p1_2--cont{
+
+.parent_container--general_information_2--cont {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 5rem;
 }
-.parent_container--element_p1_2--cont .item{
+
+.parent_container--general_information_2--cont .item {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.parent_container--element_p1_2--cont .item img{
+
+.parent_container--general_information_2--cont .item img {
   height: 60rem;
   margin-left: 8rem;
 }
-.parent_container--element_p1_2--cont .steam{
+
+.parent_container--general_information_2--cont .steam {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.parent_container--element_p1_2--cont .steam img{
+
+.parent_container--general_information_2--cont .steam img {
   width: 80%;
   margin-bottom: 5rem;
 }
-.parent_container--element_p2 {
+
+.parent_container--text_l_img_r {
   background-image: url(../img/poder_de_crear.png);
   background-size: 100% 100%;
   display: flex;
@@ -71,14 +80,15 @@
   justify-content: flex-start;
 }
 
-.parent_container--element_p2 .text_p2 {
+.parent_container--text_l_img_r .text_p2 {
   width: 40rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-left: 15rem;
 }
-.parent_container--element_p3 {
+
+.parent_container--corousel_courses {
   background-color: #F5F5F5;
   display: flex;
   flex-direction: column;
@@ -86,42 +96,50 @@
   align-items: center;
   justify-content: center;
 }
-.iparent_container--element_p3--item_title{
+
+.iparent_container--corousel_courses--item_title {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 50rem;
 }
-.parent_container--element_p3--cont{
+
+.parent_container--corousel_courses--cont {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.cont_course{
+
+.cont_course {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.cont_course img{
+
+.cont_course img {
   width: 30rem;
   height: 20rem;
 }
-.cont_course p{
+
+.cont_course p {
   width: 30rem;
 }
+
 .img_curso {
   height: 18rem;
   width: 25rem;
   margin: 3rem;
   border-radius: 3rem;
 }
-.parent_container--element_p4 img{
+
+.parent_container--img_100 img {
   width: 100%;
   height: 100%;
   margin: 1rem;
 }
-.parent_container--element_p5{
+
+.parent_container--testimonials_students {
   background-image: url(../img/Imagen4.jpeg);
   background-size: 100% 100%;
   background-color: #F5F5F5;
@@ -131,32 +149,38 @@
   justify-content: center;
   align-items: flex-end;
 }
-.text_p5{
+
+.text_p5 {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   margin-right: 12%;
 }
-.parent_container--element_p5--cont h2{
+
+.parent_container--testimonials_students--cont h2 {
   width: 50rem;
 }
-.parent_container--element_p5--cont{
+
+.parent_container--testimonials_students--cont {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   width: 40rem;
   margin-right: 15rem;
 }
-.parent_container--element_p5--cont ul li{
+
+.parent_container--testimonials_students--cont ul li {
   margin-bottom: 1rem;
   text-justify:distribute;
   color: #1C1740;
 }
-.parent_container--element_p5--cont ul li img{
+
+.parent_container--testimonials_students--cont ul li img {
   width: 5rem;
   height: 5rem;
 }
-.text_li{
+
+.text_li {
   display: flex;
   flex-direction: row;
   justify-content: center;

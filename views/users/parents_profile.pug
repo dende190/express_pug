@@ -3,24 +3,34 @@ block styles
   link(rel="stylesheet", href="/css/parents_profile.css")
 block content
     div.parent_container
-        div.parent_container--control_inscription
-            div.parent_container--info_parent
-                img(src="/img/perfil.jpg", alt="")
-                div.info_parent--Data
-                h4 Nombre del padre
-                p correo@mail.como
-                p N de estudiantes activos
-            div.parent_container--info_courses
-                div.info_courses--active_courses
-                    h4 cursos activos
-                    div.info_courses--active_courses-name_date
-                        p Nombre del curso
-                        p fecha de inicio
-                div.info_courses--billing_history
-                
-                    h4 historial de facturacion
-                    div.billing_history-name_date
-                        p Nombre del curso
-                        p fecha de inicio
-                        button.dowload_billing
-        div.parent_container--info_est
+        div.parent_container-parent_profile
+            div.parent_container--control_inscription
+                div.parent_container--info_parent
+                    img(src="/img/perfil.jpg")
+                    div.info_parent--Data
+                        h4 Nombre del padre
+                        p correo@mail.como
+                        p N de estudiantes activos
+                div.parent_container--info_courses
+                    div.info_courses--billing_and_active_courses
+                        h4 Cursos Activos
+                        div.name_date
+                            p Nombre del curso
+                            p fecha de inicio
+                    div.info_courses--billing_and_active_courses
+                    
+                        h4 Historial de facturacionss
+                        div.name_date
+                            p Nombre del curso
+                            p fecha de inicio
+                            button.dowload_billing
+            div.parent_container--info_estudent
+                div.info_estudent--data
+                    h4 Estudiantes
+                    div.info_estudent
+                        img(src="/img/perfil.jpg")
+                        p Nombre del estudiante
+                        p usuario
+                        p curso inscrito
+                    div.button_update_estudent
+                        button agregar estudiante

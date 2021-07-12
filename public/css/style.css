@@ -53,7 +53,6 @@ ul li {
   font-size: 1.6rem;
   font-family: Arial, Helvetica, sans-serif;
 }
-
 .header {
   background: #77F5FE;
   box-shadow: 0.3rem 0.3rem 1rem #00000029;
@@ -63,6 +62,7 @@ ul li {
   align-items: center;
   justify-content: space-between;
   height: 5.5rem;
+  min-width: 320px;
 }
 
 .header ul {
@@ -95,7 +95,7 @@ ul li {
 }
 
 .header--logo-container img{
-  height: 2.5rem;
+  height: 3rem;
 }
 
 .footer {
@@ -114,4 +114,17 @@ ul li {
   height: 3rem;
   margin: 1rem;
   padding-right: 5rem;
+}
+@media screen and (max-width: 600px){
+  .header--list-container{
+    display: none;
+  }
+  .header{
+    background-color: white;
+  }
+  .header--logo-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 }

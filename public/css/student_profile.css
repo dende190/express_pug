@@ -1,20 +1,20 @@
-h4{
+h4 {
     color: #28215C;
 }
-h5{
+h5 {
     color: #4C4A5A;
 }
-p{
+p {
     color: #28215C;
 }
-.parent_container{
+.parent_container {
     display: flex;
-    height: 100vh;
+    height: 110vh;
     background: #F5F5F5;
     justify-content: center;
     align-items: center;
 }
-.parent_container--student_profile{
+.parent_container--student_profile {
     display: flex;
     flex-direction: row;
     width: 100%;

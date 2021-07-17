@@ -77,12 +77,12 @@ Se puede ver en [/style_guide/css.md](/style_guide/css.md)
 
 ## Código PUG
 
-Se puede ver en [/style_guide/html.md](/style_guide/pug.md)
+Se puede ver en [/style_guide/pug.md](/style_guide/pug.md)
 
 ## Código JavaScript Front
 
-Se puede ver en [/style_guide/javascript.md](/style_guide/js.md)
+Se puede ver en [/style_guide/js.md](/style_guide/js.md)
 
 ## Código JavaScript Back
 
-Se puede ver en [/style_guide/php.md](/style_guide/node.md)
+Se puede ver en [/style_guide/node.md](/style_guide/node.md)

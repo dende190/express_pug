@@ -1,12 +1,15 @@
 h4 {
     color: #28215C;
 }
+
 h5 {
     color: #4C4A5A;
 }
+
 p {
     color: #28215C;
 }
+
 .parent_container {
     display: flex;
     height: 110vh;
@@ -14,6 +17,7 @@ p {
     justify-content: center;
     align-items: center;
 }
+
 .parent_container--student_profile {
     display: flex;
     flex-direction: row;
@@ -21,19 +25,22 @@ p {
     justify-content: space-evenly;
     align-items: center;
 }
-.info_student--data{
+
+.info_student--data {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.info_student--data img{
+
+.info_student--data img {
     height: 15rem;
     width: 15rem;
     border-radius: 100%;
     margin-bottom: 1.5rem;
 }
-.info_student--shecule_and_reminders{
+
+.info_student--shecule_and_reminders {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -45,16 +52,19 @@ p {
     margin-top: 2.5rem;
     padding: 3rem;
 }
-.student_profile--info_courses{
+
+.student_profile--info_courses {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-.my_courses--carousel_courses{
+
+.my_courses--carousel_courses {
     display: flex;
     flex-direction: column;
 }
-.img_curso{
+
+.img_curso {
     width: 10rem;
     height: 7rem;
     background-color: #D5EAEB;
@@ -62,31 +72,38 @@ p {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
-.info_courses--data_courses{
+
+.info_courses--data_courses {
     display: flex;
     flex-direction: row;
 }
-.data_courses--info_class{
+
+.data_courses--info_class {
     width: 60%;
 }
-.info_class--text{
+
+.info_class--text {
     width: 80%;
     margin-bottom: 2rem;
 }
-.info_class--objectives p{
+
+.info_class--objectives p {
     margin-bottom: 2rem;
 }
-.info_class--objectives ul li{
+
+.info_class--objectives ul li {
     margin-top: 1rem;
     color: #28215C;
 }
-.data_courses--img_class{
+
+.data_courses--img_class {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 }
-.data_courses--img_class img{
+
+.data_courses--img_class img {
     width: 25rem;
     height: 15rem;
     border-radius: 7%;

@@ -1,13 +1,15 @@
 
-*{
+* {
   box-sizing:  border-box;
   margin: 0;
   padding: 0;
 }
-html{
+
+html {
   font-size: 62.5%;
   font-family: 'DM Sans';
 }
+
 h2 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 3.5rem;
@@ -17,18 +19,21 @@ h2 {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
-h4{
+
+h4 {
   font-size: 2rem;
   font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 1rem;
 }
+
 a {
   text-decoration: none;
 }
-p{
+p {
   font-size: 1.8rem;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 button {
   background: transparent linear-gradient(275deg, #FFB70C 0%, #FF9424 100%) 0% 0% no-repeat padding-box;
   box-shadow: 3px 3px 10px #00000029;
@@ -90,41 +95,43 @@ ul li {
   transform: scale(1.05);
 }
 
-.header--list-container{
+.header--list-container {
   width: 50%;
 }
 
-.header--logo-container img{
+.header--logo-container img {
   height: 3rem;
 }
 
 .footer {
-  background: linear-gradient(to right, #77F5FE, #8ff3faad);
-  box-shadow: 0.3rem 0.3rem 1rem #00000029;
-  opacity: 1;
-}
-.footer{
   display: flex;
   align-items: center;
   justify-content: flex-end;
   height: 5.5rem;
+  background: linear-gradient(to right, #77F5FE, #8ff3faad);
+  box-shadow: 0.3rem 0.3rem 1rem #00000029;
+  opacity: 1;
 }
 
-.footer img{
+.footer img {
   height: 3rem;
   margin: 1rem;
   padding-right: 5rem;
 }
-@media screen and (max-width: 600px){
-  .header--list-container{
+
+@media screen and (max-width: 600px) {
+  .header--list-container {
     display: none;
   }
-  .header{
+
+  .header {
     background-color: white;
   }
-  .header--logo-container{
+
+  .header--logo-container {
     width: 100%;
     display: flex;
     justify-content: center;
   }
+  
 }

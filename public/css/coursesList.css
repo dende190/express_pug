@@ -1,32 +1,34 @@
-.parent_container{
-  
-}
 .element {
   display: grid;
   background: #D0FCFF;
   height: 35rem;
 }
+
 .container_element {
   display: grid;
   grid-template-columns: repeat(2,1fr);
   align-items: center;
   justify-items: center;
 }
+
 .container_element--textos {
   justify-content: center;
   width: 40rem;
   height: auto;
 }
+
 .container_element--img img {
   width: 23rem;
   height: 30rem;
 }
-.container_career--courses{
+
+.container_career--courses {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 3rem;
 }
+
 .container_career--courses--text {
   display: grid;
   grid-template-columns: repeat(2,1fr);
@@ -48,9 +50,11 @@
   height: 100%;
   width: 100%;
 }
-.container_career--courses--text .item:first-of-type:hover{
+
+.container_career--courses--text .item:first-of-type:hover {
   scale: 1.05;
 }
+
 .container_career--courses--text .item:nth-child(2n) {
   background: var(--grises) 0% 0% no-repeat padding-box;
   background: #D5EAEB 0% 0% no-repeat padding-box;
@@ -63,21 +67,26 @@
   height: 100%;
   width: 100%;
 }
-.container_career--courses--text .item:nth-child(2n):hover{
+
+.container_career--courses--text .item:nth-child(2n):hover {
   scale: 1.05;
 }
-.container_career--courses--text .item h4{
+
+.container_career--courses--text .item h4 {
   margin: 0;
 }
-.img_courses{
+
+.img_courses {
   text-align: center;
 }
-.img_courses img{
+
+.img_courses img {
   width: 30rem;
   height: 20rem;
   margin: 1.5rem;
 }
-.img_courses--text{
+
+.img_courses--text {
   width: 30rem;
   margin: 1.5rem;
 }

@@ -4,6 +4,7 @@
   justify-content: center;
   height: 100vh;
 }
+
 form {
   background: url(../img/Log_infondo.png);
   background-repeat: no-repeat;
@@ -15,7 +16,8 @@ form {
   align-items: center;
   justify-content: center;
 }
-.login--container-inputs{
+
+.login--container-inputs {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,13 +25,15 @@ form {
   width: 100%;
   margin-bottom: 1rem;
 }
-.login--container--inputs-info{
+.login--container--inputs-info {
   width: 60%;
 }
-label{
+
+label {
   font-size: 1.6rem;
   margin: 0.5rem;
 }
+
 .style_input input {
   width: 95%;
   margin: 0.5rem;
@@ -39,6 +43,7 @@ label{
   border: grey;
   margin-bottom: 1.5rem;
 }
+
 .login--container--container_button {
   display: flex;
   flex-direction: column;
@@ -80,6 +85,6 @@ label{
   align-items: center;
   justify-content: center;
 }
-.lostPassword{
+.lostPassword {
   font-size: 1.8rem;
 }

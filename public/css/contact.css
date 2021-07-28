@@ -1,11 +1,11 @@
-.parent_container{
+.parent_container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 88vh;
-
 }
-.parent_container--contact_us{
+
+.parent_container--contact_us {
   background-image: url(../img/Contactanos_img.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -14,7 +14,8 @@
   align-items: center;
   margin-right: 8rem;
 }
-.parent_container--info_contact{
+
+.parent_container--info_contact {
   background-image: url(../img/Log_infondo.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -29,9 +30,11 @@
   padding-top: 8rem;
   padding-bottom: 8rem;
 }
-.parent_container--info_contact p{
+
+.parent_container--info_contact p {
   color: #28215C;
 }
-.parent_container--info_contact h4{
+
+.parent_container--info_contact h4 {
   color: #28215C;
 }

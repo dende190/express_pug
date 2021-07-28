@@ -1,4 +1,4 @@
-button{
+button {
   margin: 0;
 }
 
@@ -9,7 +9,8 @@ button{
   /*recuerda modificar este valor para el responsive*/
   height: 110vh;
 }
-.register_user--parent_container{
+
+.register_user--parent_container {
   display: grid;
   grid-template-columns: 50% 50%;
   background-image: url(../img/Inscripcion_Fondo.png);
@@ -20,6 +21,7 @@ button{
   justify-content: center;
   align-items: center;
 }
+
 .register_user--parent_container-info_academy {
   display: flex;
   flex-direction: column;
@@ -42,6 +44,7 @@ button{
   font-family: Arial, Helvetica, sans-serif;
   margin:0;
 }
+
 .register_user--parent_container-info_user {
   display: flex;
   flex-direction: column;
@@ -56,6 +59,7 @@ button{
   height: 90%;
   width: 65%;
 }
+
 .info_user--data-head_title {
   display: flex;
   flex-direction: column;
@@ -63,11 +67,13 @@ button{
   width: 70%;
   margin-bottom: 10px;
 }
-.info_user--data-head_title h4{
+
+.info_user--data-head_title h4 {
   color: #28215C;
   font: normal normal 600 40px/52px Open Sans;
   margin:0;
 }
+
 .info_user--data-head_title p {
   margin: 0;
   font: normal normal normal 16px/23px Open Sans;
@@ -78,13 +84,13 @@ button{
   opacity: 1;
 }
 
-.info_user--data-full_name{
+.info_user--data-full_name {
   display: flex;
   flex-direction: row;
   width: 98%;
 }
 
-.info_user--data-full_name input{
+.info_user--data-full_name input {
   height: 95%;
   margin: 5px;
   border-radius: 7px;
@@ -123,10 +129,12 @@ button{
   flex-direction: row;
   width: 100%;
 }
-.info_user--data-sex_container label{
+
+.info_user--data-sex_container label {
   font-size: 1.6rem;
 }
-.info_user--data-sex_container label input{
+
+.info_user--data-sex_container label input {
   margin-left: 0.5rem;
 }
 
@@ -174,8 +182,3 @@ button{
   align-items: center;
   justify-content: center;
 }
-
-
-
-
-

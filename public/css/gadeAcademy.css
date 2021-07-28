@@ -185,3 +185,26 @@
   flex-direction: row;
   justify-content: center;
 }
+
+@media screen and (max-width: 600px) {
+  .parent_container{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .parent_container--general_information.contents {
+    height: auto;
+    background-image: none;
+  }
+
+  .parent_container--general_information--cont {
+    height: 100%;
+    width: 80%;
+    margin: 0;
+    text-align: left;
+  }
+
+  .parent_container--general_information_2--cont {
+    display: none;
+  }
+}

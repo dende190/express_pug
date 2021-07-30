@@ -1,9 +1,11 @@
 .parent_container {
   display: grid;
-  height: 360rem;
-  grid-template-rows: 33% 12% 20% 24% 11%;
+  height: 380rem;
+  grid-template-rows: 25% 13% 13% 20% 10% 10% 9%;
   row-gap: 0px;
   grid-template-areas:
+    "contents"
+    "contents"
     "contents"
     "contents"
     "contents"
@@ -45,7 +47,7 @@
 .parent_container--general_information_2--cont {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   padding: 5rem;
 }
 
@@ -56,7 +58,8 @@
 }
 
 .parent_container--general_information_2--cont .item img {
-  height: 60rem;
+  height: 35rem;
+  width: 35rem;
   margin-left: 8rem;
 }
 
@@ -65,19 +68,30 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 35%;
+}
+.steam--list_container {
+  margin-top: 2rem;
+}
+.steam--list_container p{
+  margin-bottom: 1.5rem;
 }
 
-.parent_container--general_information_2--cont .steam img {
-  width: 80%;
-  margin-bottom: 5rem;
+.steam_icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+.general_information--mobile {
+  display: none;
 }
 
 .parent_container--text_l_img_r {
-  background-image: url(../img/poder_de_crear.png);
-  background-size: 100% 100%;
+  background-color: #F5F5F5;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-around;
 }
 
 .parent_container--text_l_img_r .text_p2 {
@@ -87,9 +101,18 @@
   align-items: center;
   margin-left: 15rem;
 }
-
+.steam--img_button{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.steam--img_button img{
+  width: 40rem;
+  height: 30rem;
+}
 .parent_container--corousel_courses {
-  background-color: #F5F5F5;
+  background-color: #FFFFFF;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -136,15 +159,40 @@
 .parent_container--img_100 img {
   width: 100%;
   height: 100%;
-  margin: 1rem;
 }
 
+.parent_container--learning_path{
+  display: none;
+}
+
+.parent_container--academic_dimension.contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 5rem;
+  padding-left: 10rem;
+}
+
+.parent_container--academic_dimension.contents img {
+  width: 90%;
+  height: 18rem;
+}
+
+.parent_container--academic_dimension.contents p {
+  width: 80%;
+  height: 15srem;
+  margin-bottom: 2rem;
+}
+.academic_dimension--button{
+  display: none;
+}
 .parent_container--testimonials_students {
-  background-image: url(../img/Imagen4.jpeg);
+  background-image: url(../img/parents_opinions.png);
   background-size: 100% 100%;
-  background-color: #F5F5F5;
+  background-color: white;
   background-repeat: no-repeat;
   display: flex;
+  margin: 2rem;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
@@ -186,25 +234,15 @@
   justify-content: center;
 }
 
-@media screen and (max-width: 600px) {
-  .parent_container{
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .parent_container--general_information.contents {
-    height: auto;
-    background-image: none;
-  }
+.parent_container--contac_numbers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
-  .parent_container--general_information--cont {
-    height: 100%;
-    width: 80%;
-    margin: 0;
-    text-align: left;
-  }
-
-  .parent_container--general_information_2--cont {
-    display: none;
-  }
+.contac_numbers--img_l_text_r {
+  display: flex;
+  flex-direction: row;
 }

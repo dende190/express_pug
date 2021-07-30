@@ -1,38 +1,67 @@
 extends ../layouts/base
 block styles
   link(rel="stylesheet" href="/css/gadeAcademy.css")
+  link(rel="stylesheet", href="/css/gadeAcademyMobile.css" media="(max-width: 600px)")
 block content
   div.parent_container
     div.parent_container--general_information.contents
       div.parent_container--general_information--cont
-        h2 Programacion, arte y tecnología para niños
+        h2 Aprender a programar <br> !es estar siempre en la jugada¡
         p
-          | El futuro está ens manos de quienes hoy comprenden la
-          | tecnología y la usan para hacer un mundo más accesible,
-          | útil y dinámico. Nosotros te hacemos parte de ello 
-          | fortaleciendo tus conocimientos de una forma lúdica, 
-          | sencilla y muy divertidas.
-          button Mi primera clase gratis
+          | Asegura el futuro de tus hijos mientras ellos se divierten y 
+          |desarrollan habilidades tecnológicas y digitales Que les permite 
+          |crear mundos que Nacen desde la imaginación..
+        div.general_information--mobile
+          img(src="/img/Img_responsive_mobile/childrens_mine.png")
+          p
+            |Niños entre 8 y 15 años
+
+        button Mi primera clase gratis        
       div.parent_container--general_information_2--cont
         div.item
-          img(src="/img/child_imagin.png")
+          img(src="/img/pixel_girl.png")
         div.steam
-          img(src="/img/steam.png")
+          h2 Transformamos la educación <br> ¡Y creamos una nueva experiencia!
           p 
-            |Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse velit delectus porro <br>
-            |ut maxime adipisci, inventore saepe totam, veniam quam minus obcaecati vitae rem <br>
-            |incidunt suscipit? Similique libero voluptatum quis? Lorem ipsum dolor sit amet <br>
-            |consectetur adipisicing elit. Esse velit delectus porro ut maxime adipisci, inventore<br>
-            |saepe totam, veniam quam minus obcaecati vitae rem incidunt suscipit? Similique <br>
-            |libero voluptatum quis?        
+            |A la educación tradicional le hace Falta PIXELES y eso 
+            |lo tiene claro una generación que hoy es 100% digital. 
+            |Aquí es cuando decidimos arrancar la hoja y nos 
+            |Conectamos con ellos mediante:
+          div.steam--list_container 
+            p 
+              img.steam_icon(src="/img/Img_responsive_mobile/icono1.png")
+              |El lenguaje de programación
+            p 
+              img.steam_icon(src="/img/Img_responsive_mobile/icono2.png")
+              |Transformando tareas en retos y logros
+            p 
+              img.steam_icon(src="/img/Img_responsive_mobile/icono3.png")
+              |Reemplazando calificaciones por resultados
+            p 
+              img.steam_icon(src="/img/Img_responsive_mobile/icono4.png")
+              |Dando libertad de expresión a cada proyecto
     div.parent_container--text_l_img_r.contents
       div.text_p2
+        h2 Nuestro Chip: <br> Diversión + Experiencia = Aprendizaje
         p
-          | Ofrecemos cursos para iniciar a los mas jovenes y niños a entender
-          | el mundo de la programación por medio de una metodologia basada en
-          | el juego; utilizamos como herramienta la version educativa de
-          | minecraft, las bases de la programacion y la creatividad de cada
-          | estudiante.
+          |Con nuestros cursos además de aprender a programar con 
+          |La versión educativa del videojuego Minecraft, desarrollan 
+          |Su capacidad para:
+        div.steam--list_container 
+            p 
+              img.steam_icon(src="/img/Img_responsive_mobile/icono5.png")
+              |Tomar desiciones y trabajar en equipo
+            p 
+              img.steam_icon(src="/img/Img_responsive_mobile/icono5.png")
+              |Resolver problemas mediante el razonamiento lógico
+            p 
+              img.steam_icon(src="/img/Img_responsive_mobile/icono5.png")
+              |Aprender a travez de la experimentación y la Creatividad
+            p 
+              img.steam_icon(src="/img/Img_responsive_mobile/icono5.png")
+              |Confiar en si mismos gracias al cumplimiento de metas
+      div.steam--img_button
+        img(src="/img/Img_responsive_mobile/steam3@2x.png")
         button Mi primera clase gratis
     div.parent_container--corousel_courses.contents
         div.parent_container--corousel_courses--item_title
@@ -43,27 +72,59 @@ block content
                 img(class="img_curso" src="/img/castillo.jpg")
               h4 Castillo medieval
               p.text
-                | En este curso haremos una sociedad Medieval en la que vamos a
-                | aprender Sobre civilizaciones antiguas y su desarrollo,
-                | mietras programamos nuestro mundo.
+                | Aprende historia viajando a la época medieval mientras creas 
+                |castillos por medio de la programación.
             div.cont_course
               a(href="/cursos/zoo")
                 img(class="img_curso" src="/img/img_zoo.png")
               h4 Zoologico
               p.text
-                | En este curso crearemos nuestro propio zoologico en el
-                | cual aprenderemos de los biomas y sus animales,
-                | mientras programamo nuestro mundo.
+                |Aprende sobre circuitos, Ingeniería y física mientras creas 
+                |atracciones Utilizando lenguaje de programación.
             div.cont_course
               a(href="/cursos/parque")
                 img(class="img_curso" src="/img/img_parque.png")
               h4 Parque de Diversiones
               p.text
-                | En este curso crearemos un parque de diversiones,
-                | en el cual vamos a aprender sobre la tegnologia detras de las
-                | atracciones, esto mientras programamos nuestro mundo.
+                | Aprende sobre biodiversidad, hábitats, 
+                |Especies animales y vegetales mientras programas un Zoológico.
     div.parent_container--img_100.contents
-      img(src="/img/ruta_aprendizaje.png")
+      img(src="/img/Img_responsive_mobile/Rutadeaprendizaje@2x.png")
+    div.parent_container--learning_path
+        div.learning_path--texts
+          h3 1. bases de conocimiento
+          p 
+            |Otorgamos al estudiantes todas las Bases que necesita para 
+            |conocer La interface del juego
+        div.learning_path--texts
+          h3 2. Despertamos la curiosidad
+          p 
+            |Despertamos la curiosidad innata en los niños de querer descubrir más, 
+            |con lo cual lo llevamos a generar nuevas ideas
+        div.learning_path--texts
+          h3 3. Steam
+          p 
+            |Según sea el proyecto que se escoja a desarrollar, implementamos 
+            |metodología STEAM para reforzar Conocimientos en áreas del saber común
+        div.learning_path--texts
+          h3 4. Práctica constante
+          p Acompañamos a cada estudiante a llevar a cabo todos los conocimientos adquiridos
+        div.learning_path--texts
+          h3 5. Proyecto final
+          p 
+            |Al final de cada curso el estudiante entrega un proyecto final realizado 
+            |por el mismo con ayuda de lenguajes de programación
+        img(src="/img/Img_responsive_mobile/child_route.png")
+    div.parent_container--academic_dimension.contents
+      h2 Dimensión Académica
+      p 
+        |Este es el lugar donde tienen la confianza para crear lo que su imaginación 
+        |les dicte, conocer las ideas creativas de otros estudiantes y conectarse con 
+        |lo que de verdad les enseña: LA EXPERIENCIA
+      div.academic_dimension--img_features
+        img(src="/img/dimension academica.png")
+      div.academic_dimension--button
+        button Empieza Gratis
     div.parent_container--testimonials_students.contents
       div.text_p5
         h2 nuestros estudiantes
@@ -81,4 +142,11 @@ block content
             div.text_li
               img(src="/img/icono.png")
               |queremos un mundo y una sociedad mas integra inteligente y desarrollada
-              
+    div.parent_container--contac_numbers
+      h2 Construir futuro con Educación de calidad <br> Es estar siempre en la jugada!
+      div.contac_numbers--img_l_text_r
+        img(src="/img/whats_app_logo.png")
+        div.img_l_text_r--numbers
+          h2 Telefonos:
+          p 57 301 688 9227
+          p 57 319 429 6538

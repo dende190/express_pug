@@ -10,4 +10,7 @@ header
         li
           a(href="/empresa/contactanos") Contactanos
         li
-          a(href="/usuario/iniciar-sesion") Iniciar Sesion
+          if !locals.usuarioId
+            a(href="/usuario/iniciar-sesion") Iniciar Sesion
+          else
+            a(href="/usuario/cerrar-sesion") Cerrar Sesion

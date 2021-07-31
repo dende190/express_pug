@@ -31,11 +31,13 @@ function usersRoute(app) {
     }
 
     req.session.userId = userId;
-    res.redirect('/');
+    res.app.locals.usuarioId = userId;
+    res.redirect('/usuario/inicio');
   });
 
   router.get('/cerrar-sesion', (req, res, next) => {
     req.session.destroy((err) => {
+      delete res.app.locals.usuarioId;
       if (err) {
         return console.log(err);
       }

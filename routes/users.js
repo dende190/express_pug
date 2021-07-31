@@ -4,11 +4,11 @@ const usersService = require('../services/users');
 
 function usersRoute(app) {
   const router = express.Router();
-  app.use('/', router);
+  app.use('/usuario', router);
 
   router.get('/', (req, res, next) => {
     if (!req.session.userId) {
-      return res.redirect('/iniciar-sesion');
+      return res.redirect('usuario/iniciar-sesion');
     }
     res.render('courses/list', { title: 'Login' });
   });
@@ -27,7 +27,7 @@ function usersRoute(app) {
   router.post('/iniciar-sesion', async (req, res, next) => {
     const userId = await loginService.authUser(req.body);
     if (!userId) {
-      return res.redirect('/iniciar-sesion');
+      return res.redirect('usuario/iniciar-sesion');
     }
 
     req.session.userId = userId;
@@ -40,7 +40,7 @@ function usersRoute(app) {
         return console.log(err);
       }
 
-      res.redirect('/iniciar-sesion');
+      res.redirect('usuario/iniciar-sesion');
     });
   });
 
@@ -63,6 +63,14 @@ function usersRoute(app) {
 
     req.session.userId = userId;
     res.redirect('/');
+  });
+
+  router.get('/perfil-padres', (req, res, next) => {
+    res.render('users/parents_profile', { title: 'Login' });
+  });
+
+  router.get('/perfil-estudiantes', (req, res, next) => {
+    res.render('users/student_profile', { title: 'Login' });
   });
 }
 

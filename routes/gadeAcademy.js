@@ -2,7 +2,7 @@ const express = require('express');
 
 function gadeAcademyRoute(app) {
   const router = express.Router();
-  app.use('/gade-academy', router);
+  app.use('/', router);
 
   router.get('/', (req, res, next) => {
     const datosVista = {

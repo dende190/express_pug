@@ -1,13 +1,60 @@
-.container_button {
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+form {
+  background: url(../img/Log_infondo.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  width: 60rem;
+  height: 60rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.login--container-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.login--container--inputs-info {
+  width: 60%;
+}
+
+label {
+  font-size: 1.6rem;
+  margin: 0.5rem;
+}
+
+.style_input input {
+  width: 95%;
+  margin: 0.5rem;
+  height: px;
+  border-radius: 0.7rem;
+  padding: 0.5rem;
+  border: grey;
+  margin-bottom: 1.5rem;
+}
+
+.login--container--container_button {
   display: flex;
   flex-direction: column;
   width: 60%;
-  height: 15%;
+  height: 20%;
   justify-content: center;
   align-items: center;
 }
 
-.container_button a {
+.login--container--container_button a {
   text-decoration: none;
   color: black;
 }
@@ -16,22 +63,20 @@
   width: 60%;
 }
 
-.container_button a input {
-  font: normal normal normal 16px/23px Open Sans;
-  font-family: Arial, Helvetica, sans-serif;
+.login--container--container_button a input {
+  font-size: 1.6rem;
   background: transparent linear-gradient(275deg, #FFB70C 0%, #FF9424 100%) 0% 0% no-repeat padding-box;
-  font-weight: 600;
   opacity: 1;
-  border-radius: 100px;
+  border-radius: 10rem;
   border: #FFB70C;
   width: 100%;
-  height: 40px;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  height: 4rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
   color: white;
 }
 
-.container_button a input:hover {
+.login--container--container_button a input:hover {
   background: transparent linear-gradient(275deg, #FF9424 0%, #FFB70C 100%) 0% 0% no-repeat padding-box;
   transform: scale(1.05);
 }
@@ -42,44 +87,6 @@
   justify-content: center;
 }
 
-.inicio_sesion {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 600px;
-}
-
-.imputs_login {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-.info_user {
-  width: 60%;
-}
-
-.info_password {
-  width: 60%;
-}
-
-.stylo_input input {
-  width: 95%;
-  margin: 5px;
-  height: px;
-  border-radius: 7px;
-  padding: 5px;
-  border: grey;
-  margin-bottom: 15px;
-}
-
-.lostPassword a {
-  font: normal normal normal 16px/23px Open Sans;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  color: black;
-  text-decoration: none;
+.lostPassword {
+  font-size: 1.8rem;
 }

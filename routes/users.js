@@ -8,7 +8,7 @@ function usersRoute(app) {
 
   router.get('/', (req, res, next) => {
     if (!req.session.userId) {
-      return res.redirect('usuario/iniciar-sesion');
+      return res.redirect('/usuario/iniciar-sesion');
     }
     res.render('courses/list', { title: 'Login' });
   });
@@ -27,7 +27,7 @@ function usersRoute(app) {
   router.post('/iniciar-sesion', async (req, res, next) => {
     const userId = await loginService.authUser(req.body);
     if (!userId) {
-      return res.redirect('usuario/iniciar-sesion');
+      return res.redirect('/usuario/iniciar-sesion');
     }
 
     req.session.userId = userId;
@@ -40,7 +40,7 @@ function usersRoute(app) {
         return console.log(err);
       }
 
-      res.redirect('usuario/iniciar-sesion');
+      res.redirect('/usuario/iniciar-sesion');
     });
   });
 

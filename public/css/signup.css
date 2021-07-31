@@ -120,7 +120,8 @@ button {
   display: flex;
   flex-direction: column;
 }
-.text_font{
+
+.text_font {
   font-size: 1.5rem;
 }
 

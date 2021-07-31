@@ -1,13 +1,12 @@
 extends ../layouts/base
 block styles
   link(rel="stylesheet", href="/css/login.css")
-
 block content
   div.login
     form(
       action="iniciar-sesion"
       method="post"
-)
+    )
       h2 Bienvenido de nuevo
       div.login--container-inputs
         div.login--container--inputs-info.style_input
@@ -26,8 +25,8 @@ block content
           )
       div.login--container--container_button
         button Iniciar sesion
-        a.lostPassword ¿olvidaste tu contraseña?
+        a.lostPassword ¿Olvidaste tu contraseña?
       div.login--container--container_button
         button
-          a.button_open_registro Registrate
+          a(href="/usuario/registrarse" class="button_open_registro") Registrate
         p ¿Aun no tienes una cuenta?

@@ -4,13 +4,13 @@
   grid-template-rows: 25% 13% 13% 20% 10% 10% 9%;
   row-gap: 0px;
   grid-template-areas:
-    "contents"
-    "contents"
-    "contents"
-    "contents"
-    "contents"
-    "contents"
-    "contents";
+    'contents'
+    'contents'
+    'contents'
+    'contents'
+    'contents'
+    'contents'
+    'contents';
 }
 
 .parent_container--general_information {
@@ -70,10 +70,12 @@
   align-items: center;
   width: 35%;
 }
+
 .steam--list_container {
   margin-top: 2rem;
 }
-.steam--list_container p{
+
+.steam--list_container p {
   margin-bottom: 1.5rem;
 }
 
@@ -101,16 +103,19 @@
   align-items: center;
   margin-left: 15rem;
 }
-.steam--img_button{
+
+.steam--img_button {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.steam--img_button img{
+
+.steam--img_button img {
   width: 40rem;
   height: 30rem;
 }
+
 .parent_container--corousel_courses {
   background-color: #FFFFFF;
   display: flex;
@@ -161,7 +166,7 @@
   height: 100%;
 }
 
-.parent_container--learning_path{
+.parent_container--learning_path {
   display: none;
 }
 
@@ -183,9 +188,11 @@
   height: 15srem;
   margin-bottom: 2rem;
 }
-.academic_dimension--button{
+
+.academic_dimension--button {
   display: none;
 }
+
 .parent_container--testimonials_students {
   background-image: url(../img/parents_opinions.png);
   background-size: 100% 100%;

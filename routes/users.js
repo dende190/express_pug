@@ -6,11 +6,11 @@ function usersRoute(app) {
   const router = express.Router();
   app.use('/usuario', router);
 
-  router.get('/', (req, res, next) => {
+  router.get('/inicio', (req, res, next) => {
     if (!req.session.userId) {
       return res.redirect('/usuario/iniciar-sesion');
     }
-    res.render('courses/list', { title: 'Login' });
+    res.render('courses/list', { title: 'inicio' });
   });
 
   router.get('/iniciar-sesion', (req, res, next) => {

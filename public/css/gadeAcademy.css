@@ -1,6 +1,6 @@
 .parent_container {
   display: grid;
-  height: 380rem;
+  height: 400rem;
   grid-template-rows: 25% 13% 13% 20% 10% 10% 9%;
   row-gap: 0px;
   grid-template-areas:
@@ -14,7 +14,7 @@
 }
 
 .parent_container--general_information {
-  background-image: url(../img/Landing_Head.png);
+  background-image: url(../img/ladin_head.jpg);
   background-color: #F5F5F5;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -245,4 +245,61 @@
 .contac_numbers--img_l_text_r {
   display: flex;
   flex-direction: row;
+}
+
+.parent_container--pop_up_free_star {
+  display: none;
+  position: absolute;
+  padding-left: 5rem;
+  width: 500px;
+  height: 600px;
+  top: 40%;
+  left: 50%;
+  margin-top: -150px;
+  margin-left: -250px;
+  background-image: url(../img/Log_infondo.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.parent_container--pop_up_free_star form {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 90%;
+  margin-top: 5rem;
+}
+
+.pop_up_free_star--inputs {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  width: 80%;
+  height: 80%;
+  justify-content: space-around;
+}
+
+.inputStyle input{
+  width: 95%;
+  margin: 0.5rem;
+  border-radius: 0.7rem;
+  padding: 0.5rem;
+  border: grey;
+}
+
+.inputs--day_of_class {
+  margin-top: 2rem;
+}
+
+.inputs--day_of_class select{
+  margin: 5px;
+  width: 30%;
+  height: 25px;
+  border-radius: 7px;
+  padding: 5px;
+  border: grey;
+}
+
+.parent_container--pop_up_free_star button{ 
+  margin-left: 5rem;
 }

@@ -1,40 +1,37 @@
 extends ../layouts/base
 block styles
-  link(rel="stylesheet", href="/css/student_profile.css")
+  link(rel="stylesheet" href="/css/student_profile.css")
 block content
-    div.parent_container
-        div.parent_container--student_profile
-            div.student_profile--info_student
-                div.info_student--data
-                    img(src="/img/perfil.jpg")
-                    p Nombre del estudiante
-                div.info_student--shecule_and_reminders
-                    p Horario semanal
-                    p recordatorios
-            div.student_profile--info_courses
-                div.info_courses--my_courses
-                    h2 !Hola estudiante bienvenido¡
-                    div.my_courses--carousel_courses
-                        p Mis cursos
-                        div.carousel_courses
-                            div.img_curso
-                div.info_courses--data_courses
-                    div.data_courses--info_class
-                        h5 continua viendo...
-                        h2 Conceptos basicos
-                        div.info_class--text
-                            p aqui tiene que ir el parrafo que describa esta clase 
-                        div.info_class--objectives
-                            p Objetivos
-                            ul
-                                li objetivo 1
-                                li objetivo 2
-                                li objetivo 3
-                                li objetivo 4
-                    div.data_courses--img_class
-                        img(src="/img/castillo.jpg")
-                        h4 Titulo de la clase
-                        button seguir viendo
-
-
-        
+  div.parent_container
+    div.parent_container--student_profile
+      div.student_profile--info_student
+        div.info_student--data
+          img(src="/img/perfil.jpg")
+          p Nombre del estudiante
+        div.info_student--shecule_and_reminders
+          p Horario semanal
+          p recordatorios
+      div.student_profile--info_courses
+        div.info_courses--my_courses
+          h2 !Hola estudiante bienvenido¡
+          div.my_courses--carousel_courses
+            p Mis cursos
+            div.carousel_courses
+              div.img_curso
+        div.info_courses--data_courses
+          div.data_courses--info_class
+            h5 continua viendo...
+            h2 Conceptos basicos
+            div.info_class--text
+              p aqui tiene que ir el parrafo que describa esta clase
+            div.info_class--objectives
+              p Objetivos
+              ul
+                li objetivo 1
+                li objetivo 2
+                li objetivo 3
+                li objetivo 4
+          div.data_courses--img_class
+            img(src="/img/castillo.jpg")
+            h4 Titulo de la clase
+            button seguir viendo

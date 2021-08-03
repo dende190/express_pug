@@ -1,65 +1,83 @@
 extends ../layouts/base
 block styles
   link(rel="stylesheet" href="/css/gadeAcademy.css")
-  link(rel="stylesheet", href="/css/gadeAcademyMobile.css" media="(max-width: 600px)")
+  link(
+    rel="stylesheet"
+    href="/css/gadeAcademyMobile.css"
+    media="(max-width: 600px)"
+  )
 block content
   div.parent_container
     div.parent_container--general_information.contents
       div.parent_container--general_information--cont
-        h2 Aprender a programar <br> !es estar siempre en la jugada¡
+        h2
+          | Aprender a programar
+          br
+          | !Es estar siempre en la jugada¡
         p
-          | Asegura el futuro de tus hijos mientras ellos se divierten y 
-          |desarrollan habilidades tecnológicas y digitales Que les permite 
-          |crear mundos que Nacen desde la imaginación..
+          | Asegura el futuro de tus hijos mientras ellos se divierten y
+          | desarrollan habilidades tecnológicas y digitales Que les permite
+          | crear mundos que Nacen desde la imaginación..
         div.general_information--mobile
           img(src="/img/Img_responsive_mobile/childrens_mine.png")
           p
+<<<<<<< HEAD
             |Niños entre 8 y 15 años
 
         button Empieza Gratis        
+=======
+            | Niños entre 8 y 15 años
+        button Mi primera clase gratis
+>>>>>>> 86ceb97b97159b7cbb8e4e9f5f93a47ce3b21e12
       div.parent_container--general_information_2--cont
         div.item
           img(src="/img/pixel_girl.png")
         div.steam
-          h2 Transformamos la educación <br> ¡Y creamos una nueva experiencia!
-          p 
-            |A la educación tradicional le hace Falta PIXELES y eso 
-            |lo tiene claro una generación que hoy es 100% digital. 
-            |Aquí es cuando decidimos arrancar la hoja y nos 
-            |Conectamos con ellos mediante:
-          div.steam--list_container 
-            p 
+          h2
+            | Transformamos la educación
+            br
+            | ¡Y creamos una nueva experiencia!
+          p
+            | A la educación tradicional le hace Falta PIXELES y eso
+            | lo tiene claro una generación que hoy es 100% digital.
+            | Aquí es cuando decidimos arrancar la hoja y nos
+            | Conectamos con ellos mediante:
+          div.steam--list_container
+            p
               img.steam_icon(src="/img/Img_responsive_mobile/icono1.png")
-              |El lenguaje de programación
-            p 
+              | El lenguaje de programación
+            p
               img.steam_icon(src="/img/Img_responsive_mobile/icono2.png")
-              |Transformando tareas en retos y logros
-            p 
+              | Transformando tareas en retos y logros
+            p
               img.steam_icon(src="/img/Img_responsive_mobile/icono3.png")
-              |Reemplazando calificaciones por resultados
-            p 
+              | Reemplazando calificaciones por resultados
+            p
               img.steam_icon(src="/img/Img_responsive_mobile/icono4.png")
-              |Dando libertad de expresión a cada proyecto
+              | Dando libertad de expresión a cada proyecto
     div.parent_container--text_l_img_r.contents
       div.text_p2
-        h2 Nuestro Chip: <br> Diversión + Experiencia = Aprendizaje
+        h2
+          | Nuestro Chip:
+          br
+          | Diversión + Experiencia = Aprendizaje
         p
-          |Con nuestros cursos además de aprender a programar con 
-          |La versión educativa del videojuego Minecraft, desarrollan 
-          |Su capacidad para:
-        div.steam--list_container 
-            p 
+          | Con nuestros cursos además de aprender a programar con
+          | La versión educativa del videojuego Minecraft, desarrollan
+          | Su capacidad para:
+        div.steam--list_container
+            p
               img.steam_icon(src="/img/Img_responsive_mobile/icono5.png")
-              |Tomar desiciones y trabajar en equipo
-            p 
+              | Tomar desiciones y trabajar en equipo
+            p
               img.steam_icon(src="/img/Img_responsive_mobile/icono5.png")
-              |Resolver problemas mediante el razonamiento lógico
-            p 
+              | Resolver problemas mediante el razonamiento lógico
+            p
               img.steam_icon(src="/img/Img_responsive_mobile/icono5.png")
-              |Aprender a travez de la experimentación y la Creatividad
-            p 
+              | Aprender a travez de la experimentación y la Creatividad
+            p
               img.steam_icon(src="/img/Img_responsive_mobile/icono5.png")
-              |Confiar en si mismos gracias al cumplimiento de metas
+              | Confiar en si mismos gracias al cumplimiento de metas
       div.steam--img_button
         img(src="/img/steam_table.png")
         button Empieza Gratis
@@ -72,55 +90,59 @@ block content
                 img(class="img_curso" src="/img/medieval_course.jpg")
               h4 Castillo medieval
               p.text
-                | Aprende historia viajando a la época medieval mientras creas 
-                |castillos por medio de la programación.
+                | Aprende historia viajando a la época medieval mientras creas
+                | castillos por medio de la programación.
             div.cont_course
               a(href="/cursos/zoo")
                 img(class="img_curso" src="/img/zoo_course.jpg")
               h4 Zoologico
               p.text
-                |Aprende sobre circuitos, Ingeniería y física mientras creas 
-                |atracciones Utilizando lenguaje de programación.
+                | Aprende sobre circuitos, Ingeniería y física mientras creas
+                | atracciones Utilizando lenguaje de programación.
             div.cont_course
               a(href="/cursos/parque")
                 img(class="img_curso" src="/img/park_course.jpg")
               h4 Parque de Diversiones
               p.text
-                | Aprende sobre biodiversidad, hábitats, 
-                |Especies animales y vegetales mientras programas un Zoológico.
+                | Aprende sobre biodiversidad, hábitats,
+                | Especies animales y vegetales mientras programas un Zoológico.
     div.parent_container--img_100.contents
       img(src="/img/learning_rute.jpg")
     div.parent_container--learning_path
         div.learning_path--texts
           h3 1. bases de conocimiento
-          p 
-            |Otorgamos al estudiantes todas las Bases que necesita para 
-            |conocer La interface del juego
+          p
+            | Otorgamos al estudiantes todas las Bases que necesita para
+            | conocer La interface del juego
         div.learning_path--texts
           h3 2. Despertamos la curiosidad
-          p 
-            |Despertamos la curiosidad innata en los niños de querer descubrir más, 
-            |con lo cual lo llevamos a generar nuevas ideas
+          p
+            | Despertamos la curiosidad innata en los niños de querer
+            | descubrir más, con lo cual lo llevamos a generar nuevas ideas
         div.learning_path--texts
           h3 3. Steam
-          p 
-            |Según sea el proyecto que se escoja a desarrollar, implementamos 
-            |metodología STEAM para reforzar Conocimientos en áreas del saber común
+          p
+            | Según sea el proyecto que se escoja a desarrollar, implementamos
+            | metodología STEAM para reforzar Conocimientos en áreas del
+            | saber común
         div.learning_path--texts
           h3 4. Práctica constante
-          p Acompañamos a cada estudiante a llevar a cabo todos los conocimientos adquiridos
+          p
+            | Acompañamos a cada estudiante a llevar a cabo todos los
+            | conocimientos adquiridos
         div.learning_path--texts
           h3 5. Proyecto final
-          p 
-            |Al final de cada curso el estudiante entrega un proyecto final realizado 
-            |por el mismo con ayuda de lenguajes de programación
+          p
+            | Al final de cada curso el estudiante entrega un proyecto final
+            | realizado por el mismo con ayuda de lenguajes de programación
         img(src="/img/Img_responsive_mobile/child_route.png")
     div.parent_container--academic_dimension.contents
       h2 Dimensión Académica
-      p 
-        |Este es el lugar donde tienen la confianza para crear lo que su imaginación 
-        |les dicte, conocer las ideas creativas de otros estudiantes y conectarse con 
-        |lo que de verdad les enseña: LA EXPERIENCIA
+      p
+        | Este es el lugar donde tienen la confianza para crear lo que su
+        | imaginación les dicte, conocer las ideas creativas de otros
+        | estudiantes y conectarse con  lo que de verdad les enseña: LA
+        | EXPERIENCIA
       div.academic_dimension--img_features
         img(src="/img/dimension academica.png")
       div.academic_dimension--button
@@ -133,17 +155,23 @@ block content
           li
             div.text_li
               img(src="/img/icono.png")
-              |Damos prioridad a los niños y a sus propios intereses
-          li 
+              | Damos prioridad a los niños y a sus propios intereses
+          li
             div.text_li
               img(src="/img/icono.png")
-              |nos encanta hacer realidad los sueños de los niños y que sepan que ellos mismos pueden lograrlo.
-          li 
+              | Nos encanta hacer realidad los sueños de los niños y que sepan
+              | que ellos mismos pueden lograrlo.
+          li
             div.text_li
               img(src="/img/icono.png")
-              |queremos un mundo y una sociedad mas integra inteligente y desarrollada
+              p
+                | Queremos un mundo y una sociedad mas integra inteligente y
+                | desarrollada
     div.parent_container--contac_numbers
-      h2 Construir futuro con Educación de calidad <br> Es estar siempre en la jugada!
+      h2
+        | Construir futuro con Educación de calidad
+        br
+        | Es estar siempre en la jugada!
       div.contac_numbers--img_l_text_r
         img(src="/img/whats_app_logo.png")
         div.img_l_text_r--numbers

@@ -286,7 +286,7 @@
   justify-content: space-around;
 }
 
-.inputStyle input{
+.inputStyle input {
   width: 95%;
   margin: 0.5rem;
   border-radius: 0.7rem;
@@ -298,7 +298,7 @@
   margin-top: 2rem;
 }
 
-.inputs--day_of_class select{
+.inputs--day_of_class select {
   margin: 5px;
   width: 30%;
   height: 25px;
@@ -307,6 +307,6 @@
   border: grey;
 }
 
-.parent_container--pop_up_free_star button{ 
+.parent_container--pop_up_free_star button { 
   margin-left: 5rem;
 }

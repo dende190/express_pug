@@ -24,7 +24,7 @@
 }
 
 .general_information--mobile {
-  display:block;
+  display: block;
 }
 
 .general_information--mobile img {
@@ -141,18 +141,6 @@
   margin-bottom: 1rem;
 }
 
-.academic_dimension--button {
-  display: block;
-}
-
-.academic_dimension--img_features img {
-  display: none;
-}
-
-.parent_container--testimonials_students {
-  display: none;
-}
-
-.parent_container--contac_numbers {
+.hide_display{
   display: none;
 }

@@ -1,15 +1,16 @@
 header
   div.header
     div.header--logo-container
-      a(href="/empresa")
+      a(href="/")
         img(src="/img/Logo2.png")
     div.header--list-container
       ul
         li
-          a Cursos
+          a(href="/") Cursos
         li
           a(href="/empresa/contactanos") Contactanos
         li
-          a Prueba gratis
-        li
-          a(href="/usuario/iniciar-sesion") Iniciar Sesion
+          if !locals.usuarioId
+            a(href="/usuario/iniciar-sesion") Iniciar Sesion
+          else
+            a(href="/usuario/cerrar-sesion") Cerrar Sesion

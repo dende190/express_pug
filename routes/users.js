@@ -6,11 +6,11 @@ function usersRoute(app) {
   const router = express.Router();
   app.use('/usuario', router);
 
-  router.get('/', (req, res, next) => {
+  router.get('/inicio', (req, res, next) => {
     if (!req.session.userId) {
-      return res.redirect('usuario/iniciar-sesion');
+      return res.redirect('/usuario/iniciar-sesion');
     }
-    res.render('courses/list', { title: 'Login' });
+    res.render('courses/list', { title: 'inicio' });
   });
 
   router.get('/iniciar-sesion', (req, res, next) => {
@@ -27,20 +27,22 @@ function usersRoute(app) {
   router.post('/iniciar-sesion', async (req, res, next) => {
     const userId = await loginService.authUser(req.body);
     if (!userId) {
-      return res.redirect('usuario/iniciar-sesion');
+      return res.redirect('/usuario/iniciar-sesion');
     }
 
     req.session.userId = userId;
-    res.redirect('/');
+    res.app.locals.usuarioId = userId;
+    res.redirect('/usuario/inicio');
   });
 
   router.get('/cerrar-sesion', (req, res, next) => {
     req.session.destroy((err) => {
+      delete res.app.locals.usuarioId;
       if (err) {
         return console.log(err);
       }
 
-      res.redirect('usuario/iniciar-sesion');
+      res.redirect('/usuario/iniciar-sesion');
     });
   });
 

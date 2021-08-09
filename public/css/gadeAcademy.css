@@ -36,7 +36,13 @@
 }
 
 .parent_container--general_information--cont h2 {
+  opacity: 1;
   width: 90%;
+}
+
+.parent_container--general_information--cont h2:nth-child(2n) {
+  margin-top: 0;
+  margin-bottom: 3rem;
 }
 
 .parent_container--general_information--cont p {
@@ -79,9 +85,13 @@
   margin-bottom: 1.5rem;
 }
 
+.list_container--icon_l_img_r {
+  display: flex;
+  flex-direction: row;
+}
 .steam_icon {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
   margin-right: 1rem;
 }
 
@@ -190,7 +200,8 @@
 }
 
 .academic_dimension--button {
-  display: none;
+  align-self: center;
+  margin-right: 15rem;
 }
 
 .parent_container--testimonials_students {

@@ -4,7 +4,7 @@ block styles
   link(
     rel="stylesheet"
     href="/css/gadeAcademyMobile.css"
-    media="(max-width: 600px)"
+    media="(max-width: 800px)"
   )
 block content
   div.parent_container
@@ -38,16 +38,16 @@ block content
             | Conectamos con ellos mediante:
           div.steam--list_container
             p
-              img.steam_icon(src="/img/Img_responsive_mobile/icono1.png")
+              img.steam_icon(src="/img/icons/game_icon.svg")
               | El lenguaje de programación
             p
-              img.steam_icon(src="/img/Img_responsive_mobile/icono2.png")
+              img.steam_icon(src="/img/icons/shooting_icon.svg")
               | Transformando tareas en retos y logros
             p
-              img.steam_icon(src="/img/Img_responsive_mobile/icono3.png")
+              img.steam_icon(src="/img/icons/star_icon.svg")
               | Reemplazando calificaciones por resultados
             p
-              img.steam_icon(src="/img/Img_responsive_mobile/icono4.png")
+              img.steam_icon(src="/img/icons/brain_icon.svg")
               | Dando libertad de expresión a cada proyecto
     div.parent_container--text_l_img_r.contents
       div.text_p2
@@ -60,17 +60,21 @@ block content
           | La versión educativa del videojuego Minecraft, desarrollan
           | Su capacidad para:
         div.steam--list_container
+          div.list_container--icon_l_img_r
+            img.steam_icon(src="/img/icons/check_circle.svg")
             p
-              img.steam_icon(src="/img/Img_responsive_mobile/icono5.png")
               | Tomar desiciones y trabajar en equipo
+          div.list_container--icon_l_img_r
+            img.steam_icon(src="/img/icons/check_circle.svg")
             p
-              img.steam_icon(src="/img/Img_responsive_mobile/icono5.png")
               | Resolver problemas mediante el razonamiento lógico
+          div.list_container--icon_l_img_r
+            img.steam_icon(src="/img/icons/check_circle.svg")
             p
-              img.steam_icon(src="/img/Img_responsive_mobile/icono5.png")
               | Aprender a travez de la experimentación y la Creatividad
+          div.list_container--icon_l_img_r
+            img.steam_icon(src="/img/icons/check_circle.svg")
             p
-              img.steam_icon(src="/img/Img_responsive_mobile/icono5.png")
               | Confiar en si mismos gracias al cumplimiento de metas
       div.steam--img_button
         img(src="/img/steam_table.png")
@@ -136,10 +140,11 @@ block content
       p
         | Este es el lugar donde tienen la confianza para crear lo que su
         | imaginación les dicte, conocer las ideas creativas de otros
-        | estudiantes y conectarse con  lo que de verdad les enseña: LA
-        | EXPERIENCIA
+        | estudiantes y conectarse con  lo que de verdad les enseña:
+        b 
+          | LA EXPERIENCIA
       div.academic_dimension--img_features
-        img.hide_display(src="/img/dimension academica.png")
+        img.hide_display(src="/img/academic_dimension.jpg")
       div.academic_dimension--button
         button Empieza Gratis
     div.parent_container--testimonials_students.contents.hide_display

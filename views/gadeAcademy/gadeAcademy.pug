@@ -4,7 +4,12 @@ block styles
   link(
     rel="stylesheet"
     href="/css/gadeAcademyMobile.css"
-    media="(max-width: 800px)"
+    media="(max-width: 500px)"
+  )
+  link(
+    rel="stylesheet"
+    href="/css/gadeAcademyTablet.css"
+    media="(max-width: 850px) and (min-width: 500px)"
   )
 block content
   div.parent_container
@@ -83,28 +88,11 @@ block content
         div.parent_container--corousel_courses--item_title
           h2 Explora nuestros cursos
         div.parent_container--corousel_courses--cont
-            div.cont_course
-              a(href="/cursos/castillo")
-                img(class="img_curso" src="/img/medieval_course.jpg")
-              h4 Castillo medieval
-              p.text
-                | Aprende historia viajando a la época medieval mientras creas
-                | castillos por medio de la programación.
-            div.cont_course
-              a(href="/cursos/zoo")
-                img(class="img_curso" src="/img/zoo_course.jpg")
-              h4 Zoologico
-              p.text
-                | Aprende sobre circuitos, Ingeniería y física mientras creas
-                | atracciones Utilizando lenguaje de programación.
-            div.cont_course
-              a(href="/cursos/parque")
-                img(class="img_curso" src="/img/park_course.jpg")
-
-              h4 Parque de Diversiones
-              p.text
-                | Aprende sobre biodiversidad, hábitats,
-                | Especies animales y vegetales mientras programas un Zoológico.
+            p.back.button 
+              |<
+            img(src="/img/medieval_course.jpg" id="imagen")
+            p.forward.buttons 
+              |>    
     div.parent_container--img_100.contents
       img(src="/img/learning_rute.jpg")
     div.parent_container--learning_path
@@ -378,3 +366,4 @@ block content
                   option(value="1906") 1906
                   option(value="1905") 1905
           button Empieza Gratis
+  script(src="/js/carousel.js")

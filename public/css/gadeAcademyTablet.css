@@ -1,0 +1,108 @@
+.parent_container {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+  
+.parent_container--general_information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+  
+.parent_container--general_information.contents {
+  height: auto;
+  background-image: none;
+}
+  
+.parent_container--general_information--cont {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  text-align: left;
+  background-image: linear-gradient(#D0FCFF00,#8DF1FF);
+}
+  
+.general_information--mobile {
+  display: block;
+}
+  
+.general_information--mobile img {
+  width: 33rem;
+  height: 29rem;
+}
+  
+.general_information--mobile p {
+  text-align: center;
+  margin-left: 2rem;
+  font-size: 1.5rem;
+}
+
+.parent_container--general_information_2--cont {
+  padding: 0;
+  padding-right: 3rem;
+}
+
+.parent_container--text_l_img_r.contents {
+  display: flex;
+  flex-direction: column;
+}
+
+.parent_container--general_information_2--cont .item img {
+  margin: 0;
+}
+
+.parent_container--general_information_2--cont .steam {
+  width: 60%;
+}
+
+.parent_container--text_l_img_r.contents {
+  display: flex;
+  flex-flow: row wrap-reverse
+}
+
+.steam--img_button img {
+  width: 50rem;
+  height: 40rem;
+  margin-top: 2rem;
+}
+
+.parent_container--text_l_img_r .text_p2 {
+  width: 80%;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.parent_container--img_100{
+
+  height: 85rem;
+  background-image: url(../img/img_responsive_tablet/learning_path_tablet.jpg);
+}
+
+.parent_container--img_100 img {
+  display: none;
+  background-size: 100% 100%;
+  background-color: white;
+  background-repeat: no-repeat;
+}
+
+.parent_container--academic_dimension.contents {
+  padding-left: 5rem;
+}
+
+.parent_container--academic_dimension.contents p{
+  width: 95%;
+}
+
+.parent_container--academic_dimension.contents img {
+  width: 95%;
+  height: 15rem;
+}
+.academic_dimension--button{
+  margin-right: 5rem;
+}
+
+.parent_container--testimonials_students--cont{
+  margin-right: 0;
+  width: 35rem;
+}

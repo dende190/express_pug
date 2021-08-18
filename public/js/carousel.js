@@ -1,11 +1,12 @@
-var imagenes = ['/img/medieval_course.jpg','/img/park_course.jpg','/img/zoo_course.jpg'],
+var imagenes = ['/img/course1.png','/img/course2.png','/img/course3.png'],
+    texto = [''],
     cont = 0;
 
 function carrousel (contenedor){
     contenedor.addEventListener('click', e => {
       let atras = contenedor.querySelector('.back'),
           adelante = contenedor.querySelector('.forward'),
-          img = contenedor.querySelector('img'),
+          img = contenedor.querySelector('.course_img'),
           tgt = e.target;
 
       if(tgt == atras){

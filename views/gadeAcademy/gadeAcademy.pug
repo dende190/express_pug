@@ -88,11 +88,9 @@ block content
         div.parent_container--corousel_courses--item_title
           h2 Explora nuestros cursos
         div.parent_container--corousel_courses--cont
-            p.back.button 
-              |<
-            img(src="/img/medieval_course.jpg" id="imagen")
-            p.forward.buttons 
-              |>    
+            img(src="/img/icons/flecha_i.svg").back.button 
+            img.course_img(src="/img/course1.png" id="imagen")
+            img(src="/img/icons/flecha_d.svg").forward.button
     div.parent_container--img_100.contents
       img(src="/img/learning_rute.jpg")
     div.parent_container--learning_path
@@ -366,4 +364,5 @@ block content
                   option(value="1906") 1906
                   option(value="1905") 1905
           button Empieza Gratis
+  script(src="/js/prueba_carrusel.js") 
   script(src="/js/carousel.js")

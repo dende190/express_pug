@@ -1,16 +1,6 @@
 .parent_container {
-  display: grid;
-  height: 400rem;
-  grid-template-rows: 25% 13% 13% 20% 10% 10% 9%;
-  row-gap: 0px;
-  grid-template-areas:
-    'contents'
-    'contents'
-    'contents'
-    'contents'
-    'contents'
-    'contents'
-    'contents';
+  display: flex;
+  flex-direction: column;
 }
 
 .parent_container--general_information {
@@ -22,6 +12,7 @@
   grid-template-rows: 50% 50%;
   height: 100%;
   align-items: center;
+  height: 100rem;
 }
 
 .parent_container--general_information--cont {
@@ -144,31 +135,30 @@
 
 .parent_container--corousel_courses--cont {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  text-align: center;
 }
 
-.cont_course {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.parent_container--corousel_courses--cont .button{
+  width: 5rem;
+  height: 5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
-.cont_course img {
+.parent_container--corousel_courses--cont img {
+  width: 45rem;
+  margin-bottom: 5rem;
+}
+
+.cont--img_and_text img {
   width: 30rem;
   height: 20rem;
 }
 
-.cont_course p {
+.cont--img_and_texts p {
   width: 30rem;
-}
-
-.img_curso {
-  height: 18rem;
-  width: 25rem;
-  margin: 3rem;
-  border-radius: 3rem;
 }
 
 .parent_container--img_100 img {

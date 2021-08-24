@@ -105,8 +105,16 @@
 
 .parent_container--corousel_courses--cont {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   padding-bottom: 2rem;
+}
+
+.parent_container--corousel_courses--cont .course_img {
+  width: 70%;
+}
+
+.parent_container--corousel_courses--cont .button {
+  width: 3rem;
 }
 
 .parent_container--img_100 {

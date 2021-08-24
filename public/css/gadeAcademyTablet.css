@@ -102,6 +102,10 @@
   margin-right: 5rem;
 }
 
+.parent_container--testimonials_students {
+  height: 35rem;
+}
+
 .parent_container--testimonials_students--cont{
   margin-right: 0;
   width: 35rem;

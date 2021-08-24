@@ -198,6 +198,7 @@
   background-size: 100% 100%;
   background-color: white;
   background-repeat: no-repeat;
+  height: 50rem;
   display: flex;
   margin: 2rem;
   flex-direction: column;

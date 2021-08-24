@@ -140,7 +140,10 @@
 }
 
 .academic_dimension--button {
-  display: block;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
 }
 
 .academic_dimension--img_features {

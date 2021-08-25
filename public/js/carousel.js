@@ -1,4 +1,5 @@
-var imagenes = ['/img/course1.png','/img/course2.png','/img/course3.png'],
+var imagenes = ['/img/curso1.jpg','/img/curso2.jpg','/img/curso3.jpg',
+                '/img/curso4.jpg'],
     texto = [''],
     cont = 0;
 

@@ -27,7 +27,7 @@ block content
           img(src="/img/Img_responsive_mobile/childrens_mine.png")
           p
             |Niños entre 8 y 15 años
-        button Empieza Gratis        
+        button#open1 Empieza Gratis
       div.parent_container--general_information_2--cont
         div.item
           img(src="/img/pixel_girl.png")
@@ -83,7 +83,7 @@ block content
               | Confiar en si mismos gracias al cumplimiento de metas
       div.steam--img_button
         img(src="/img/steam_table.png")
-        button Empieza Gratis
+        button#open3 Empieza Gratis
     div.parent_container--corousel_courses.contents
         div.parent_container--corousel_courses--item_title
           h2 Explora nuestros cursos
@@ -132,7 +132,7 @@ block content
       div.academic_dimension--img_features
         img.hide_display(src="/img/academic_dimension.jpg")
       div.academic_dimension--button
-        button Empieza Gratis
+        button#open2 Empieza Gratis
     div.parent_container--testimonials_students.contents.hide_display
       div.text_p5
         h2 nuestros estudiantes
@@ -165,6 +165,7 @@ block content
           p 57 301 688 9227
           p 57 319 429 6538
     div.parent_container--pop_up_free_star#pop_up_free_start
+        button.close#close x
         form(action="free_star--info")
           h2 Registrate y agenda <br> una clase gratis!
           div.pop_up_free_star--inputs
@@ -364,5 +365,5 @@ block content
                   option(value="1906") 1906
                   option(value="1905") 1905
           button Empieza Gratis
-  script(src="/js/prueba_carrusel.js") 
+  script(src="/js/pop_up.js") 
   script(src="/js/carousel.js")

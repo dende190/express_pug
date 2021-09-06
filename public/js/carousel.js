@@ -1,9 +1,9 @@
-var imagenes = ['../img/curso1.jpg','../img/curso2.jpg','../img/curso3.jpg',
-                '../img/curso4.jpg'],
+var imagenes = ['/img/Curso1.jpg','/img/Curso2.jpg','/img/Curso3.jpg',
+                '/img/Curso4.jpg'],
     texto = [''],
     cont = 0;
 
-function carrousel (contenedor){
+function carrousel (contenedor){SS
     contenedor.addEventListener('click', e => {
       let atras = contenedor.querySelector('.back'),
           adelante = contenedor.querySelector('.forward'),

@@ -3,7 +3,7 @@ var imagenes = ['/img/Curso1.jpg','/img/Curso2.jpg','/img/Curso3.jpg',
     texto = [''],
     cont = 0;
 
-function carrousel (contenedor){SS
+function carrousel (contenedor){
     contenedor.addEventListener('click', e => {
       let atras = contenedor.querySelector('.back'),
           adelante = contenedor.querySelector('.forward'),

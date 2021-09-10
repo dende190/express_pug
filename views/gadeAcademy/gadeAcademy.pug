@@ -1,6 +1,6 @@
 extends ../layouts/base
 block styles
-  link(rel="stylesheet" href="/css/gadeAcademy.css")
+  link(rel="stylesheet" href="/css/gade_proyect.css")
   link(
     rel="stylesheet"
     href="/css/gadeAcademyMobile.css"
@@ -129,24 +129,24 @@ block content
         | estudiantes y conectarse con  lo que de verdad les enseña:
         b 
           | LA EXPERIENCIA
-      div.academic_dimension--img_features
-        img.hide_display(src="/img/academic_dimension.jpg")
+      img.hide_display(src="/img/academic_dimension.jpg")
       div.academic_dimension--button
         button#open2 Empieza Gratis
     div.parent_container--testimonials_students.contents.hide_display
-      div.text_p5
-        h2 nuestros estudiantes
+      h2 nuestros estudiantes
       div.parent_container--testimonials_students--cont
         ul
           li
             div.text_li
               img(src="/img/icono.png")
-              | Damos prioridad a los niños y a sus propios intereses
+              p
+                | Damos prioridad a los niños y a sus propios intereses
           li
             div.text_li
               img(src="/img/icono.png")
-              | Nos encanta hacer realidad los sueños de los niños y que sepan
-              | que ellos mismos pueden lograrlo.
+              p 
+                | Nos encanta hacer realidad los sueños de los niños y que sepan
+                | que ellos mismos pueden lograrlo.
           li
             div.text_li
               img(src="/img/icono.png")
@@ -365,5 +365,6 @@ block content
                   option(value="1906") 1906
                   option(value="1905") 1905
           button Empieza Gratis
-  script(src="/js/pop_up.js") 
+block scripts
+  script(src="/js/pop_up.js")
   script(src="/js/carousel.js")

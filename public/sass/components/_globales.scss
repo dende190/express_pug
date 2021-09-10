@@ -1,0 +1,42 @@
+//variables
+$Fuente1: 'Open Sans', sans-serif;
+$Fuente2: 'Helvetica Neue', sans-serif;
+$color-primario: #00AFC0;
+$color-secundario:#F69B30;
+$color-textos: #1C1740;
+$color-titulos: #28215C;
+$color-claro: #FFFFFF;
+$color-claro2: #F5F5F5;
+
+//mixins
+@mixin titulos($fuente) {
+	@if $fuente == $Fuente1 {
+		font-family: $Fuente1;
+	} @else {
+		font-family: $Fuente2;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+}
+
+//functions
+@each $header, $size in (h1: 30px, h2: 25px, h3: 20px) {
+  #{$header} {
+    font-size: $size;
+    @include titulos($Fuente2);
+    margin: 0;
+  }
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'DM Sans';
+}
+
+body {
+	margin: 0;
+	background-color: #F9FAFC;
+	color: $color-primario;
+	@include titulos($Fuente1);
+	font-size: 1.8rem;
+}

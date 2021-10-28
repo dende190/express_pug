@@ -5,11 +5,16 @@
   "main": "app.js",
   "scripts": {
     "dev": "DEBUG=app:* nodemon app",
-    "start": "NODE_ENV=production node app",
-    "prepare": "husky install"
+    "start": "concurrently \"node app.js\" \"npm run watch-css\" ",
+    "prepare": "husky install",
+    "build-css": "node-sass --include-path scss C:/Users/PC/Desktop/jhonatan/GadeAcademyV2/express_pug/public/sass/gade_proyect.scss C:/Users/PC/Desktop/jhonatan/GadeAcademyV2/express_pug/public/css/gade_proyect.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\" ",
+    "build-css-mobile": "node-sass --include-path scss C:/Users/PC/Desktop/jhonatan/GadeAcademyV2/express_pug/public/sass/gade_mobile.scss C:/Users/PC/Desktop/jhonatan/GadeAcademyV2/express_pug/public/css/gade_mobile.css",
+    "watch-css-mobile": "nodemon -e scss -x \"npm run build-css-mobile\" "
   },
   "dependencies": {
     "bcrypt": "^5.0.1",
+    "concurrently": "^6.2.1",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "dotenv": "^10.0.0",
@@ -27,6 +32,8 @@
     "eslint-plugin-prettier": "^3.4.0",
     "husky": "^6.0.0",
     "lint-staged": "^11.0.0",
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12",
     "prettier": "^2.3.0"
   },
   "lint-staged": {

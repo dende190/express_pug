@@ -1,9 +1,11 @@
 extends ../layouts/base
 block styles
-  link(rel="stylesheet" href="/css/gadeAcademy.css")
+  link(
+    rel="stylesheet" 
+    href="/css/gade_proyect.css")
   link(
     rel="stylesheet"
-    href="/css/gadeAcademyMobile.css"
+    href="/css/gade_mobile.css"
     media="(max-width: 500px)"
   )
   link(
@@ -36,7 +38,7 @@ block content
             | Transformamos la educación
             br
             | ¡Y creamos una nueva experiencia!
-          p
+          p.steam_text
             | A la educación tradicional le hace Falta PIXELES y eso
             | lo tiene claro una generación que hoy es 100% digital.
             | Aquí es cuando decidimos arrancar la hoja y nos
@@ -89,7 +91,20 @@ block content
           h2 Explora nuestros cursos
         div.parent_container--corousel_courses--cont
             img.back.button(src="/img/icons/flecha_i.svg") 
+<<<<<<< HEAD
             img.course_img(src="/img/Curso1.jpg" id="imagen")
+=======
+            div.corousel_courses--cont
+              +gadeCourses("Mine edu",
+              "mineEdu_castle.png",
+              "Aprende historia viajando a la época medieval mientras creas castillos por medio de la programación.")
+              +gadeCourses("Mine Country",
+              "mc_creator.jpg",
+              "Crea tu pais y aprende sobre su diversidad, mientras te diviertes explorando las diferentes herramientas del curso.")
+              +gadeCourses("Minecraft design",
+              "diseño.jpg",
+              "aprende los conceptos del diseño creando tu propio mundo de minecraft.")
+>>>>>>> main
             img.forward.button(src="/img/icons/flecha_d.svg")
     div.parent_container--img_100.contents
       img(src="/img/learning_rute.jpg")
@@ -129,24 +144,24 @@ block content
         | estudiantes y conectarse con  lo que de verdad les enseña:
         b 
           | LA EXPERIENCIA
-      div.academic_dimension--img_features
-        img.hide_display(src="/img/academic_dimension.jpg")
+      img.hide_display(src="/img/academic_dimension.jpg")
       div.academic_dimension--button
         button#open2 Empieza Gratis
     div.parent_container--testimonials_students.contents.hide_display
-      div.text_p5
-        h2 nuestros estudiantes
+      h2 Nuestros estudiantes
       div.parent_container--testimonials_students--cont
         ul
           li
             div.text_li
               img(src="/img/icono.png")
-              | Damos prioridad a los niños y a sus propios intereses
+              p
+                | Damos prioridad a los niños y a sus propios intereses
           li
             div.text_li
               img(src="/img/icono.png")
-              | Nos encanta hacer realidad los sueños de los niños y que sepan
-              | que ellos mismos pueden lograrlo.
+              p 
+                | Nos encanta hacer realidad los sueños de los niños y que sepan
+                | que ellos mismos pueden lograrlo.
           li
             div.text_li
               img(src="/img/icono.png")
@@ -161,9 +176,8 @@ block content
       div.contac_numbers--img_l_text_r
         img(src="/img/whats_app_logo.png")
         div.img_l_text_r--numbers
-          h2 Telefonos:
-          p 57 301 688 9227
-          p 57 319 429 6538
+          h2 Telefono:
+          p +34 641 03 42 84
     div.parent_container--pop_up_free_star#pop_up_free_start
         button.close#close x
         form(action="free_star--info")
@@ -365,5 +379,6 @@ block content
                   option(value="1906") 1906
                   option(value="1905") 1905
           button Empieza Gratis
-  script(src="/js/pop_up.js") 
+block scripts
+  script(src="/js/pop_up.js")
   script(src="/js/carousel.js")

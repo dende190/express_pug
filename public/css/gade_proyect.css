@@ -1,21 +1,18 @@
 h1 {
   font-size: 30px;
   font-family: "Helvetica Neue", sans-serif;
-  text-transform: uppercase;
   font-weight: 700;
   margin: 0; }
 
 h2 {
   font-size: 25px;
   font-family: "Helvetica Neue", sans-serif;
-  text-transform: uppercase;
   font-weight: 700;
   margin: 0; }
 
 h3 {
   font-size: 20px;
   font-family: "Helvetica Neue", sans-serif;
-  text-transform: uppercase;
   font-weight: 700;
   margin: 0; }
 
@@ -46,12 +43,11 @@ body {
   .parent_container--general_information--cont {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: flex-start;
     width: 40%;
     height: 70%;
     padding: 2rem;
-    margin-left: 5rem; }
+    margin-left: 13.5rem; }
     .parent_container--general_information--cont h2 {
       opacity: 1;
       width: 90%; }
@@ -82,17 +78,29 @@ body {
     justify-content: center;
     align-items: center;
     width: 40%; }
-    .parent_container--general_information_2--cont .steam p {
-      margin-top: 2rem; }
-    .parent_container--general_information_2--cont .steam--list_container {
-      margin-top: 2rem; }
-      .parent_container--general_information_2--cont .steam--list_container p {
-        margin-bottom: 2rem; }
+    .parent_container--general_information_2--cont .steam h2 {
+      width: 100%; }
+    .parent_container--general_information_2--cont .steam .steam_text {
+      margin-top: 2rem;
+      margin-bottom: 2rem; }
     .parent_container--general_information_2--cont .steam_icon {
       width: 2.5rem;
       height: 2.5rem;
       margin-right: 1rem;
       padding-top: 0.5rem; }
+
+.steam--list_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+  .steam--list_container .list_container--icon_l_img_r {
+    display: flex;
+    flex-direction: row; }
+    .steam--list_container .list_container--icon_l_img_r .steam_icon {
+      width: 2.5rem;
+      height: 2.5rem;
+      margin-right: 1rem;
+      margin-top: 2rem; }
 
 .parent_container--text_l_img_r.contents {
   background-color: #F5F5F5;
@@ -107,25 +115,21 @@ body {
     align-items: center; }
     .parent_container--text_l_img_r.contents .text_p2 p {
       margin-top: 2rem; }
-  .parent_container--text_l_img_r.contents .steam--list_container {
-    display: flex;
-    flex-direction: column; }
-    .parent_container--text_l_img_r.contents .steam--list_container .list_container--icon_l_img_r {
-      display: flex;
-      flex-direction: row; }
-      .parent_container--text_l_img_r.contents .steam--list_container .list_container--icon_l_img_r .steam_icon {
-        width: 2.5rem;
-        height: 2.5rem;
-        margin-right: 1rem;
-        margin-top: 2rem; }
-  .parent_container--text_l_img_r.contents .steam--img_button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    .parent_container--text_l_img_r.contents .steam--img_button img {
-      width: 40rem;
-      height: 30rem; }
+
+.steam--img_button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .steam--img_button img {
+    width: 40rem;
+    height: 30rem; }
+
+.corousel_courses--cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
 
 .parent_container--corousel_courses {
   background-color: #FFFFFF;
@@ -170,10 +174,10 @@ body {
   padding: 5rem;
   background-color: #FFFFFF; }
   .parent_container--academic_dimension img {
-    width: 90%;
+    width: 83%;
     height: 18rem; }
   .parent_container--academic_dimension p {
-    width: 80%;
+    width: 83%;
     margin-bottom: 2rem;
     margin-top: 2rem; }
 
@@ -182,24 +186,27 @@ body {
   background-size: 100% 100%;
   background-color: white;
   background-repeat: no-repeat;
-  height: 50rem;
+  height: 40rem;
+  width: 85%;
   display: flex;
   margin: 2rem;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end; }
+  align-items: flex-end;
+  align-self: center; }
   .parent_container--testimonials_students h2 {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    margin-right: 12%;
-    width: 50rem; }
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-right: 5rem;
+    width: 52rem; }
   .parent_container--testimonials_students--cont {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     width: 40rem;
-    margin-right: 15rem; }
+    margin-right: 5rem; }
     .parent_container--testimonials_students--cont li {
       margin-bottom: 1rem;
       text-justify: distribute;
@@ -220,10 +227,14 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center; }
+  .parent_container--contac_numbers img {
+    height: 10rem;
+    padding-top: 1rem; }
   .parent_container--contac_numbers .contac_numbers--img_l_text_r {
     display: flex;
     flex-direction: row;
-    justify-content: center; }
+    justify-content: center;
+    align-items: center; }
 
 .parent_container--pop_up_free_star {
   display: none;
@@ -233,7 +244,7 @@ body {
   height: 600px;
   top: 35%;
   left: 50%;
-  margin-top: -150px;
+  margin-top: -130px;
   margin-left: -250px;
   background-image: url(../img/Log_infondo.png);
   background-repeat: no-repeat;
@@ -254,7 +265,8 @@ body {
     .parent_container--pop_up_free_star form p {
       margin-top: 2rem; }
   .parent_container--pop_up_free_star button {
-    margin-left: 5rem; }
+    width: 25rem;
+    margin-left: auto 0; }
   .parent_container--pop_up_free_star .pop_up_free_star--inputs {
     display: flex;
     flex-direction: column;
@@ -277,3 +289,18 @@ body {
         border-radius: 7px;
         padding: 5px;
         border: grey; }
+
+.cointainer_courses {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 70%;
+  margin: 2rem; }
+  .cointainer_courses h2 {
+    margin-bottom: 2rem; }
+  .cointainer_courses img {
+    margin-bottom: 2rem;
+    width: 30rem;
+    border-radius: 0.7rem; }
+  .cointainer_courses img:hover {
+    width: 35rem; }

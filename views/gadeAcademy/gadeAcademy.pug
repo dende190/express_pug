@@ -1,9 +1,11 @@
 extends ../layouts/base
 block styles
-  link(rel="stylesheet" href="/css/gade_proyect.css")
+  link(
+    rel="stylesheet" 
+    href="/css/gade_proyect.css")
   link(
     rel="stylesheet"
-    href="/css/gadeAcademyMobile.css"
+    href="/css/gade_mobile.css"
     media="(max-width: 500px)"
   )
   link(
@@ -36,7 +38,7 @@ block content
             | Transformamos la educación
             br
             | ¡Y creamos una nueva experiencia!
-          p
+          p.steam_text
             | A la educación tradicional le hace Falta PIXELES y eso
             | lo tiene claro una generación que hoy es 100% digital.
             | Aquí es cuando decidimos arrancar la hoja y nos
@@ -89,7 +91,16 @@ block content
           h2 Explora nuestros cursos
         div.parent_container--corousel_courses--cont
             img.back.button(src="/img/icons/flecha_i.svg") 
-            img.course_img(src="/img/curso1.jpg" id="imagen")
+            div.corousel_courses--cont
+              +gadeCourses("Mine edu",
+              "mineEdu_castle.png",
+              "Aprende historia viajando a la época medieval mientras creas castillos por medio de la programación.")
+              +gadeCourses("Mine Country",
+              "mc_creator.jpg",
+              "Crea tu pais y aprende sobre su diversidad, mientras te diviertes explorando las diferentes herramientas del curso")
+              +gadeCourses("Minecraft design",
+              "diseño.jpg",
+              "aprende los conceptos del diseño desde creando tu propio mundo de minecraft")
             img.forward.button(src="/img/icons/flecha_d.svg")
     div.parent_container--img_100.contents
       img(src="/img/learning_rute.jpg")
@@ -133,7 +144,7 @@ block content
       div.academic_dimension--button
         button#open2 Empieza Gratis
     div.parent_container--testimonials_students.contents.hide_display
-      h2 nuestros estudiantes
+      h2 Nuestros estudiantes
       div.parent_container--testimonials_students--cont
         ul
           li

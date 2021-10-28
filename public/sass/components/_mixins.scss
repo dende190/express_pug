@@ -1,0 +1,21 @@
+.cointainer_courses {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 70%;
+  margin: 2rem;
+
+  h2 {
+    margin-bottom: 2rem;
+  }
+
+  img {
+    margin-bottom: 2rem;
+    width: 30rem;
+    border-radius: 0.7rem;
+  }
+
+  img:hover {
+    width: 35rem;
+  }
+}

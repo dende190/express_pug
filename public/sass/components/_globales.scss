@@ -14,7 +14,6 @@ $color-claro2: #F5F5F5;
 		font-family: $Fuente1;
 	} @else {
 		font-family: $Fuente2;
-		text-transform: uppercase;
 		font-weight: 700;
 	}
 }
@@ -40,3 +39,4 @@ body {
 	@include titulos($Fuente1);
 	font-size: 1.8rem;
 }
+

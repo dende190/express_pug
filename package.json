@@ -8,7 +8,9 @@
     "start": "concurrently \"node app.js\" \"npm run watch-css\" ",
     "prepare": "husky install",
     "build-css": "node-sass --include-path scss C:/Users/PC/Desktop/jhonatan/GadeAcademyV2/express_pug/public/sass/gade_proyect.scss C:/Users/PC/Desktop/jhonatan/GadeAcademyV2/express_pug/public/css/gade_proyect.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\" "
+    "watch-css": "nodemon -e scss -x \"npm run build-css\" ",
+    "build-css-mobile": "node-sass --include-path scss C:/Users/PC/Desktop/jhonatan/GadeAcademyV2/express_pug/public/sass/gade_mobile.scss C:/Users/PC/Desktop/jhonatan/GadeAcademyV2/express_pug/public/css/gade_mobile.css",
+    "watch-css-mobile": "nodemon -e scss -x \"npm run build-css-mobile\" "
   },
   "dependencies": {
     "bcrypt": "^5.0.1",

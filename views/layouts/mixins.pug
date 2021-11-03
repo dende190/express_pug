@@ -4,3 +4,13 @@ mixin gadeCourses(title,imgCourse,text)
     .caja__imagen 
       img(src="/img/"+imgCourse)
     p=text
+
+mixin steamList(icon,text)
+  .container_steamList
+    img.steam_icon(src="/img/icons/"+icon)
+    p=text
+
+mixin learningPath(title, text)
+  .learning_path--texts
+    h3=title 
+    p=text

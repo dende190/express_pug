@@ -2,10 +2,12 @@ extends ../layouts/base
 block styles
   link(
     rel="stylesheet" 
-    href="/css/gade_proyect.css")
+    href="/css/gade_proyect.css"
+    media="(min-width: 500px)"
+    )
   link(
     rel="stylesheet"
-    href="/css/gade_mobile.css"
+    href="/css/gadeAcademyMobile.css"
     media="(max-width: 500px)"
   )
   link(
@@ -22,14 +24,14 @@ block content
           br
           | !Es estar siempre en la jugada¡
         p
-          | Asegura el futuro de tus hijos mientras ellos se divierten y
-          | desarrollan habilidades tecnológicas y digitales Que les permite
-          | crear mundos que Nacen desde la imaginación..
+          | Esta es una de las maneras en la que los niños y jóvenes pueden asegurar su entrada a un futuro optimo, 
+          | mientras se divierten desarrollando habilidades tecnológicas y digitales, 
+          | que les permite crear esos mundos desde la imaginación.
         div.general_information--mobile
           img(src="/img/Img_responsive_mobile/childrens_mine.png")
           p
             |Niños entre 8 y 15 años
-        button#open1 Empieza Gratis
+          button#open1 Empieza Gratis
       div.parent_container--general_information_2--cont
         div.item
           img(src="/img/pixel_girl.png")
@@ -44,21 +46,13 @@ block content
             | Aquí es cuando decidimos arrancar la hoja y nos
             | Conectamos con ellos mediante:
           div.steam--list_container
-            p
-              img.steam_icon(src="/img/icons/game_icon.svg")
-              | El lenguaje de programación
-            p
-              img.steam_icon(src="/img/icons/shooting_icon.svg")
-              | Transformando tareas en retos y logros
-            p
-              img.steam_icon(src="/img/icons/star_icon.svg")
-              | Reemplazando calificaciones por resultados
-            p
-              img.steam_icon(src="/img/icons/brain_icon.svg")
-              | Dando libertad de expresión a cada proyecto
+            +steamList("game_icon.svg","El lenguaje de programación")
+            +steamList("shooting_icon.svg","Transformando tareas en retos y logros")
+            +steamList("star_icon.svg","Reemplazando calificaciones por resultados")
+            +steamList("brain_icon.svg","Dando libertad de expresión a cada proyecto")
     div.parent_container--text_l_img_r.contents
       div.text_p2
-        h2
+        h2.text_p2--title
           | Nuestro Chip:
           br
           | Diversión + Experiencia = Aprendizaje
@@ -67,30 +61,17 @@ block content
           | La versión educativa del videojuego Minecraft, desarrollan
           | Su capacidad para:
         div.steam--list_container
-          div.list_container--icon_l_img_r
-            img.steam_icon(src="/img/icons/check_circle.svg")
-            p
-              | Tomar desiciones y trabajar en equipo
-          div.list_container--icon_l_img_r
-            img.steam_icon(src="/img/icons/check_circle.svg")
-            p
-              | Resolver problemas mediante el razonamiento lógico
-          div.list_container--icon_l_img_r
-            img.steam_icon(src="/img/icons/check_circle.svg")
-            p
-              | Aprender a travez de la experimentación y la Creatividad
-          div.list_container--icon_l_img_r
-            img.steam_icon(src="/img/icons/check_circle.svg")
-            p
-              | Confiar en si mismos gracias al cumplimiento de metas
+          +steamList("check_circle.svg","Tomar desiciones y trabajar en equipo")
+          +steamList("check_circle.svg","Resolver problemas mediante el razonamiento lógico")
+          +steamList("check_circle.svg","Aprender a travez de la experimentación y la Creatividad")
+          +steamList("check_circle.svg","Confiar en si mismos gracias al cumplimiento de metas")
       div.steam--img_button
         img(src="/img/steam_table.png")
         button#open3 Empieza Gratis
     div.parent_container--corousel_courses.contents
         div.parent_container--corousel_courses--item_title
           h2 Explora nuestros cursos
-        div.parent_container--corousel_courses--cont
-            img.back.button(src="/img/icons/flecha_i.svg") 
+        div.parent_container--corousel_courses--cont 
             div.corousel_courses--cont
               +gadeCourses("Mine edu",
               "mineEdu_castle.png",
@@ -101,37 +82,15 @@ block content
               +gadeCourses("Minecraft design",
               "diseño.jpg",
               "aprende los conceptos del diseño creando tu propio mundo de minecraft.")
-            img.forward.button(src="/img/icons/flecha_d.svg")
     div.parent_container--img_100.contents
       img(src="/img/learning_rute.jpg")
     div.parent_container--learning_path
-        div.learning_path--texts
-          h3 1. bases de conocimiento
-          p
-            | Otorgamos al estudiantes todas las Bases que necesita para
-            | conocer La interface del juego
-        div.learning_path--texts
-          h3 2. Despertamos la curiosidad
-          p
-            | Despertamos la curiosidad innata en los niños de querer
-            | descubrir más, con lo cual lo llevamos a generar nuevas ideas
-        div.learning_path--texts
-          h3 3. Steam
-          p
-            | Según sea el proyecto que se escoja a desarrollar, implementamos
-            | metodología STEAM para reforzar Conocimientos en áreas del
-            | saber común
-        div.learning_path--texts
-          h3 4. Práctica constante
-          p
-            | Acompañamos a cada estudiante a llevar a cabo todos los
-            | conocimientos adquiridos
-        div.learning_path--texts
-          h3 5. Proyecto final
-          p
-            | Al final de cada curso el estudiante entrega un proyecto final
-            | realizado por el mismo con ayuda de lenguajes de programación
-        img(src="/img/Img_responsive_mobile/child_route.png")
+      +learningPath("1. bases de conocimiento","Otorgamos al estudiantes todas las Bases que necesita para conocer La interface del juego")
+      +learningPath("2. Despertamos la curiosidad","Despertamos la curiosidad innata en los niños de querer descubrir más, con lo cual lo llevamos a generar nuevas ideas")
+      +learningPath("3. Steam","Según sea el proyecto que se escoja a desarrollar implementamos metodología STEAM para reforzar Conocimientos en áreas del saber común")
+      +learningPath("4. Práctica constante","Acompañamos a cada estudiante a llevar a cabo todos los conocimientos adquiridos")
+      +learningPath("5. Proyecto final","Al final de cada curso el estudiante entrega un proyecto final realizado por el mismo con ayuda de lenguajes de programación")         
+      img(src="/img/Img_responsive_mobile/child_route.png")
     div.parent_container--academic_dimension.contents
       h2 Dimensión Académica
       p
